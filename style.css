@@ -1,0 +1,74 @@
+:root {
+  --body-color: #00295d;
+  --main-color: #32cd32;
+  --accent-color: #ff5733;
+  --grey-color: #6383ae;
+
+  --important: #fff;
+  --text-color: #ebebeb;
+  --sub: #c3c3c3;
+
+  --gradient: linear-gradient(
+    90deg,
+    hsla(160, 50%, 51%, 1) 0%,
+    hsla(247, 60%, 21%, 1) 100%
+  );
+
+  --gutter-huge: 12rem;
+  --gutter-large: 6rem;
+  --gutter-medium: 4.4rem;
+  --gutter-normal: 3rem;
+  --gutter-small: 2.4rem;
+  --gutter-x-small: 1.8rem;
+  --gutter-xx-small: 1.2rem;
+  --gutter-nano: 1rem;
+  --gutter-micro: 0.5rem;
+
+  --h1: 6.2rem;
+  --h2: 4.4rem;
+  --h3: 2.4rem;
+  --h4: 2rem;
+  --text-large: 1.8rem;
+  --text-medium: 1.4rem;
+  --text-small: 1rem;
+
+  --max-width: 1200px;
+
+  --radius: 12px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--body-color);
+}
+h1 {
+  text-align: center;
+  margin-top: var(--gutter-medium);
+  color: var(--accent-color);
+  font-size: var(--h1);
+}
+
+h2 {
+  text-align: center;
+  margin-top: var(--gutter-medium);
+  color: var(--grey-color);
+  font-size: var(--h1);
+}
+
+h3 {
+  text-align: center;
+  margin-top: var(--gutter-medium);
+  color: var(--main-color);
+  font-size: var(--h1);
+}
