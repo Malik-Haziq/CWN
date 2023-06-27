@@ -1,41 +1,45 @@
+/* ======================================== */
+/* ========  Variables  =========== */
+/* ======================================== */
+
 :root {
-  --body-color: #00295d;
-  --main-color: #32cd32;
-  --accent-color: #ff5733;
-  --grey-color: #6383ae;
+  --background: #00295d;
+  --main-color: #60e14f;
+  --grey-color: #edf1d6;
+  --accent: #9032dc;
 
   --important: #fff;
-  --text-color: #ebebeb;
+  --text-color: #eee3ec;
   --sub: #c3c3c3;
 
-  --gradient: linear-gradient(
-    90deg,
-    hsla(160, 50%, 51%, 1) 0%,
-    hsla(247, 60%, 21%, 1) 100%
-  );
+  --gradient: -webkit-linear-gradient(191deg in hwb, #60e14f 0%, #9032dc 100%)
 
-  --gutter-huge: 12rem;
-  --gutter-large: 6rem;
-  --gutter-medium: 4.4rem;
-  --gutter-normal: 3rem;
-  --gutter-small: 2.4rem;
-  --gutter-x-small: 1.8rem;
-  --gutter-xx-small: 1.2rem;
+  --gutter-huge: 15rem;
+  --gutter-large: 12rem;
+  --gutter-medium: 6rem;
+  --gutter-normal: 4.4rem;
+  --gutter-small: 3.2rem;
+  --gutter-x-small: 2.2rem;
+  --gutter-xx-small: 1.6rem;
   --gutter-nano: 1rem;
   --gutter-micro: 0.5rem;
 
-  --h1: 6.2rem;
+  --h1: 5.2rem;
   --h2: 4.4rem;
   --h3: 2.4rem;
   --h4: 2rem;
-  --text-large: 1.8rem;
+  --text: 1.8rem;
   --text-medium: 1.4rem;
   --text-small: 1rem;
 
-  --max-width: 1200px;
+  --max-width: 1400px;
 
   --radius: 12px;
 }
+
+/* ======================================== */
+/* ========  Basic Setup  =========== */
+/* ======================================== */
 
 *,
 *::after,
@@ -50,25 +54,98 @@ html {
 }
 
 body {
-  background: var(--body-color);
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background);
+  background-image: url(./assets/hero-pattern.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  color: var(--text-color);
+  font-size: var(--text);
 }
+
+/* ======================================== */
+/* ========  Reuseable Components  =========== */
+/* ======================================== */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
 h1 {
-  text-align: center;
-  margin-top: var(--gutter-medium);
-  color: var(--accent-color);
   font-size: var(--h1);
+  color: var(--important);
 }
 
-h2 {
-  text-align: center;
-  margin-top: var(--gutter-medium);
-  color: var(--grey-color);
-  font-size: var(--h1);
+p {
+  font-size: var(--text);
 }
 
-h3 {
-  text-align: center;
-  margin-top: var(--gutter-medium);
-  color: var(--main-color);
-  font-size: var(--h1);
+.primary-btn {
+  background: var(--main-color);
+  color: var(--background);
+  font-weight: bold;
+  padding: var(--gutter-xx-small) var(--gutter-small);
+  border-radius: 50px;
+}
+/* ======================================== */
+/* ==================  Classes  ============= */
+/* ======================================== */
+.row {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+/* ======================================== */
+/* ================  Navigation  ================ */
+/* ======================================== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--gutter-small) var(--gutter-large);
+}
+
+.nav-links ul {
+  display: flex;
+  gap: var(--gutter-normal);
+}
+
+.nav-links ul li {
+  list-style-type: none;
+}
+
+/* ======================================== */
+/* ================  Navigation  ================ */
+/* ======================================== */
+
+.hero-section {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* gap: 0; */
+}
+
+.hero-heading h1 {
+  margin-bottom: var(--gutter-nano);
+  line-height: 1;
+}
+
+.hero-heading p {
+  margin-bottom: var(--gutter-normal);
+}
+
+.hero-heading h1 span {
+  background:
+    conic-gradient(
+      from 0deg at -28% 76% in oklch, 
+      #60e14f 0%, 64%, #9032dc 100%
+    )
+  ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-section img {
+  max-width: 600px;
 }
