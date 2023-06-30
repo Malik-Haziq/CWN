@@ -12,7 +12,7 @@
   --text-color: #eee3ec;
   --sub: #c3c3c3;
 
-  --gradient: -webkit-linear-gradient(191deg in hwb, #60e14f 0%, #9032dc 100%)
+  --gradient: -webkit-linear-gradient(191deg in hwb, #60e14f 0%, #9032dc 100%);
 
   --gutter-huge: 15rem;
   --gutter-large: 12rem;
@@ -25,7 +25,7 @@
   --gutter-micro: 0.5rem;
 
   --h1: 5.2rem;
-  --h2: 4.4rem;
+  --h2: 2rem;
   --h3: 2.4rem;
   --h4: 2rem;
   --text: 1.8rem;
@@ -56,8 +56,6 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--background);
-  background-image: url(./assets/hero-pattern.svg);
-  background-repeat: no-repeat;
   color: var(--text-color);
   font-size: var(--text);
 }
@@ -71,13 +69,32 @@ a {
   font-weight: 500;
 }
 
+section {
+  margin-bottom: var(--gutter-large);
+}
+
 h1 {
   font-size: var(--h1);
   color: var(--important);
 }
-
+h2 {
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+}
 p {
   font-size: var(--text);
+}
+
+.btn {
+  background: var(--main-color);
+  color: var(--background);
+  font-weight: bold;
+  border-radius: 50px;
 }
 
 .primary-btn {
@@ -118,11 +135,12 @@ nav {
 /* ======================================== */
 
 .hero-section {
-  height: 80vh;
+  height: 70vh;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  /* gap: 0; */
+  background-image: url(./assets/hero-pattern.svg);
+  background-repeat: no-repeat;
+  /* background-position: -100px -100px; */
 }
 
 .hero-heading h1 {
@@ -135,11 +153,12 @@ nav {
 }
 
 .hero-heading h1 span {
-  background:
-    conic-gradient(
-      from 0deg at -28% 76% in oklch, 
-      #60e14f 0%, 64%, #9032dc 100%
-    );
+  background: conic-gradient(
+    from 0deg at -28% 76% in oklch,
+    #60e14f 0%,
+    64%,
+    #9032dc 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -151,3 +170,53 @@ nav {
 /* ======================================== */
 /* ================  Courses  ================ */
 /* ======================================== */
+section:has(.courses-section) {
+  background-image: url(./assets/Images/courses_images/bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.courses-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gutter-medium);
+}
+
+.card {
+  width: 300px;
+  background: #00367b;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-body {
+  padding: var(--gutter-x-small) var(--gutter-xx-small);
+}
+
+.course-title {
+  margin-bottom: var(--gutter-nano);
+}
+
+.card-body .course-desc {
+  font-size: var(--text-medium);
+  color: var(--sub);
+  margin-bottom: var(--gutter-x-small);
+}
+
+.course-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-enroll-btn {
+  background: var(--grey-color);
+  font-size: var(--text);
+  padding: var(--gutter-nano) var(--gutter-xx-small);
+}
