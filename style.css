@@ -30,7 +30,7 @@
   --h4: 2rem;
   --text: 1.8rem;
   --text-medium: 1.4rem;
-  --text-small: 1rem;
+  --text-small: 1.2rem;
 
   --max-width: 1400px;
 
@@ -170,18 +170,26 @@ nav {
 /* ======================================== */
 /* ================  Courses  ================ */
 /* ======================================== */
-section:has(.courses-section) {
+/* section:has(.courses-section) {
   background-image: url(./assets/Images/courses_images/bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 .courses-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: var(--gutter-medium);
+}
+
+.course-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gutter-medium);
+  flex-wrap: wrap;
 }
 
 .card {
@@ -217,6 +225,10 @@ section:has(.courses-section) {
 
 .course-enroll-btn {
   background: var(--grey-color);
-  font-size: var(--text);
+  font-size: var(--text-medium);
   padding: var(--gutter-nano) var(--gutter-xx-small);
+}
+
+.course-price {
+  font-weight: 600;
 }
