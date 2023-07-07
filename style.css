@@ -170,12 +170,13 @@ nav {
 /* ======================================== */
 /* ================  Courses  ================ */
 /* ======================================== */
-/* section:has(.courses-section) {
+section:has(.courses-section) {
   background-image: url(./assets/Images/courses_images/bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-} */
+}
+
 .courses-section {
   display: flex;
   flex-direction: column;
@@ -199,7 +200,7 @@ nav {
   overflow: hidden;
 }
 
-.card img {
+.card-img img {
   width: 100%;
 }
 
@@ -208,13 +209,20 @@ nav {
 }
 
 .course-title {
-  margin-bottom: var(--gutter-nano);
+  margin-bottom: var(--gutter-xx-small);
 }
 
 .card-body .course-desc {
   font-size: var(--text-medium);
   color: var(--sub);
   margin-bottom: var(--gutter-x-small);
+}
+
+.course-desc li {
+  display: flex;
+  gap: var(--gutter-nano);
+  list-style-type: none;
+  margin-bottom: var(--gutter-nano);
 }
 
 .course-details {
