@@ -3,7 +3,7 @@
 /* ======================================== */
 
 :root {
-  --background: #00295d;
+  --primary-color: #00295d;
   --main-color: #60e14f;
   --grey-color: #edf1d6;
   --accent: #9032dc;
@@ -11,6 +11,7 @@
   --important: #fff;
   --text-color: #eee3ec;
   --sub: #c3c3c3;
+  --dark: #00295d;
 
   --gradient: -webkit-linear-gradient(191deg in hwb, #60e14f 0%, #9032dc 100%);
 
@@ -55,7 +56,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: var(--background);
+  background-color: var(--primary-color);
   color: var(--text-color);
   font-size: var(--text);
 }
@@ -90,19 +91,23 @@ p {
   font-size: var(--text);
 }
 
-.btn {
-  background: var(--main-color);
-  color: var(--background);
+.secondary-btn {
+  background: var(--grey-color);
+  color: var(--dark);
   font-weight: bold;
   border-radius: 50px;
+  border: none;
+  cursor: pointer;
 }
 
 .primary-btn {
   background: var(--main-color);
-  color: var(--background);
+  color: var(--dark);
   font-weight: bold;
   padding: var(--gutter-xx-small) var(--gutter-small);
+  border: none;
   border-radius: 50px;
+  cursor: pointer;
 }
 /* ======================================== */
 /* ==================  Classes  ============= */
@@ -245,11 +250,44 @@ section:has(.courses-section) {
 }
 
 .course-enroll-btn {
-  background: var(--grey-color);
   font-size: var(--text-medium);
   padding: var(--gutter-nano) var(--gutter-xx-small);
 }
 
 .course-price {
   font-weight: 600;
+}
+
+/* ======================================== */
+/* ================  CTA  ================ */
+/* ======================================== */
+.secondary-cta {
+  background-color: var(--main-color);
+  color: var(--dark);
+  padding: var(--gutter-normal);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.secondary-cta-heading {
+  margin-bottom: var(--gutter-nano);
+}
+
+.secondary-cta form input {
+  padding: var(--gutter-xx-small);
+  font-size: var(--text);
+  background-color: var(--grey-color);
+  border: none;
+  outline: none;
+}
+
+.secondary-cta form input:focus,
+.secondary-cta form input:hover {
+  outline: none;
+}
+
+.secondary-cta form button {
+  font-size: var(--text);
+  padding: var(--gutter-xx-small) var(--gutter-small);
 }
