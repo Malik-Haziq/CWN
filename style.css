@@ -276,11 +276,7 @@ section:has(.courses-section) {
 /* ================  CTA  ================ */
 /* ======================================== */
 section:has(.secondary-cta) {
-<<<<<<< HEAD
-  /* background: url("./assets/form-bg.svg"); */
-=======
   background: url("./assets/form-bg.svg");
->>>>>>> 630cbfa (changes)
 }
 .secondary-cta {
   background-color: var(--main-color);
