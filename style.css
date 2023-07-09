@@ -275,6 +275,9 @@ section:has(.courses-section) {
 /* ======================================== */
 /* ================  CTA  ================ */
 /* ======================================== */
+section:has(.secondary-cta) {
+  /* background: url("./assets/form-bg.svg"); */
+}
 .secondary-cta {
   background-color: var(--main-color);
   color: var(--dark);
