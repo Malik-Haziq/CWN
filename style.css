@@ -129,6 +129,20 @@ p {
   height: 4px;
   background-color: var(--main-color);
 }
+
+.line-on-hover {
+  position: relative;
+  transition: all 4s ease-in-out;
+}
+
+.line-on-hover::before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  height: 4px;
+  width: 100%;
+  background: var(--main-color);
+}
 /* ======================================== */
 /* ================  Navigation  ================ */
 /* ======================================== */
@@ -279,13 +293,24 @@ section:has(.courses-section) {
   padding: var(--gutter-xx-small);
   font-size: var(--text);
   background-color: var(--grey-color);
-  border: none;
+  border: 1px solid rgb(148, 158, 214);
   outline: none;
+  width: 100%;
+  margin-bottom: var(--gutter-nano);
+  transition: 0.1s;
 }
 
 .secondary-cta form input:focus,
 .secondary-cta form input:hover {
   outline: none;
+}
+
+.secondary-cta form input:hover {
+  border: 1px solid rgb(88, 96, 146);
+}
+
+.secondary-cta form input:focus {
+  border: 1px solid rgb(50, 60, 117);
 }
 
 .secondary-cta form button {
