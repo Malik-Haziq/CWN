@@ -130,19 +130,19 @@ p {
   background-color: var(--main-color);
 }
 
-.line-on-hover {
+/* .line-on-hover {
   position: relative;
   transition: all 4s ease-in-out;
-}
+} */
 
-.line-on-hover::before {
+/* .line-on-hover::before {
   content: "";
   position: absolute;
   bottom: 2px;
   height: 4px;
   width: 100%;
   background: var(--main-color);
-}
+} */
 /* ======================================== */
 /* ================  Navigation  ================ */
 /* ======================================== */
