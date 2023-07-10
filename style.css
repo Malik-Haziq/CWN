@@ -130,19 +130,33 @@ p {
   background-color: var(--main-color);
 }
 
-/* .line-on-hover {
+.line-on-hover {
   position: relative;
   transition: all 4s ease-in-out;
-} */
+  display: block;
+}
 
-/* .line-on-hover::before {
+.line-on-hover::after {
   content: "";
   position: absolute;
-  bottom: 2px;
-  height: 4px;
+  bottom: -0.01em;
+  left: 0;
   width: 100%;
-  background: var(--main-color);
-} */
+  height: 4px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to right,
+    var(--main-color) 50%,
+    var(--primary-color) 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 50%;
+  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.line-on-hover:hover::after {
+  background-position: 0% 50%;
+}
+
 /* ======================================== */
 /* ================  Navigation  ================ */
 /* ======================================== */
