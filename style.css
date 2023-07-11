@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: #00295d;
+  --primary-color-tint: #00367b;
   --main-color: #60e14f;
   --grey-color: #edf1d6;
   --accent: #9032dc;
@@ -12,6 +13,8 @@
   --text-color: #eee3ec;
   --sub: #c3c3c3;
   --dark: #00295d;
+
+  --border: rgba(195, 195, 195, 0.2);
 
   --gradient: -webkit-linear-gradient(191deg in hwb, #60e14f 0%, #9032dc 100%);
 
@@ -147,7 +150,7 @@ p {
   background-image: linear-gradient(
     to right,
     var(--main-color) 50%,
-    var(--primary-color) 50%
+    transparent 50%
   );
   background-size: 200% 100%;
   background-position: 100% 50%;
@@ -158,26 +161,53 @@ p {
 }
 
 /* ======================================== */
-/* ================  Navigation  ================ */
+/* ================  Navigation/Footer  ================ */
 /* ======================================== */
-nav {
+nav,
+footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: var(--gutter-small) var(--gutter-large);
 }
 
-.nav-links ul {
+nav {
+  justify-content: space-between;
+}
+
+footer {
+  flex-direction: column;
+  gap: var(--gutter-small);
+  border-top: 1px solid var(--border);
+}
+
+.nav-links ul,
+.footer-links ul {
   display: flex;
   gap: var(--gutter-normal);
 }
 
-.nav-links ul li {
+.nav-links ul li,
+.footer-links ul li {
   list-style-type: none;
 }
 
+.footer-links ul li a:hover {
+  color: var(--important);
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gutter-small);
+}
+
+.footer-icons img {
+  width: 35px;
+}
+
 /* ======================================== */
-/* ================  Navigation  ================ */
+/* ================  Hero Section  ================ */
 /* ======================================== */
 
 .hero-section {
