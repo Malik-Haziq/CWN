@@ -7,9 +7,15 @@ const secondaryModalOverlay = document.querySelector(".overlay");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  userEmails.push(e.target.input.value);
+  const re =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (re.test(e.target.input.value.trim())) {
+    secondaryModal.classList.remove("hidden");
+  } else {
+    alert("please enter correct email");
+  }
 
-  secondaryModal.classList.remove("hidden");
+  userEmails.push(e.target.input.value);
 });
 
 secondaryModalCross.addEventListener("click", () => {
