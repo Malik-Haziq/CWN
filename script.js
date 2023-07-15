@@ -4,7 +4,25 @@ const secondaryModal = document.querySelector("section:has(.overlay)");
 const secondaryModalCross = document.querySelector(".thanks-msg img");
 const secondaryModalOverlay = document.querySelector(".overlay");
 
+// --------- Events
+
 form.addEventListener("submit", (e) => {
+  onFormSubmit(e);
+});
+
+secondaryModalCross.addEventListener("click", () => {
+  secondaryModal.classList.add("hidden");
+});
+
+secondaryModalOverlay.addEventListener("click", () => {
+  secondaryModal.classList.add("hidden");
+});
+
+console.log(userEmails);
+
+// -----------------  Functions
+// Secondary Form
+const onFormSubmit = function (e) {
   e.preventDefault();
 
   const re =
@@ -16,12 +34,4 @@ form.addEventListener("submit", (e) => {
   }
 
   userEmails.push(e.target.input.value);
-});
-
-secondaryModalCross.addEventListener("click", () => {
-  secondaryModal.classList.add("hidden");
-});
-
-secondaryModalOverlay.addEventListener("click", () => {
-  secondaryModal.classList.add("hidden");
-});
+};
