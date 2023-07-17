@@ -1,8 +1,8 @@
 const userEmails = [];
-const form = document.querySelector(".secondary-cta form");
-const secondaryModal = document.querySelector("section:has(.overlay)");
-const secondaryModalCross = document.querySelector(".thanks-msg img");
-const secondaryModalOverlay = document.querySelector(".overlay");
+const notifyForm = document.querySelector(".secondary-cta form");
+const notifyModal = document.querySelector("section:has(.overlay)");
+const notifyModalCross = document.querySelector(".thanks-msg img");
+const notifyModalOverlay = document.querySelector(".overlay");
 
 // --------- Events
 
@@ -10,18 +10,18 @@ form.addEventListener("submit", (e) => {
   onFormSubmit(e);
 });
 
-secondaryModalCross.addEventListener("click", () => {
-  secondaryModal.classList.add("hidden");
+notifyModalCross.addEventListener("click", () => {
+  notifyModal.classList.add("hidden");
 });
 
-secondaryModalOverlay.addEventListener("click", () => {
-  secondaryModal.classList.add("hidden");
+notifyModalOverlay.addEventListener("click", () => {
+  notifyModal.classList.add("hidden");
 });
 
 console.log(userEmails);
 
 // -----------------  Functions
-// Secondary Form
+// Notify Form
 const onFormSubmit = function (e) {
   e.preventDefault();
 
@@ -35,3 +35,5 @@ const onFormSubmit = function (e) {
 
   userEmails.push(e.target.input.value);
 };
+
+// Form

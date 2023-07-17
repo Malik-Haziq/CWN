@@ -343,7 +343,7 @@ section:has(.secondary-cta) {
   margin-bottom: var(--gutter-nano);
 }
 
-.secondary-cta form input {
+form input {
   padding: var(--gutter-xx-small);
   font-size: var(--text);
   background-color: var(--grey-color);
@@ -354,20 +354,20 @@ section:has(.secondary-cta) {
   transition: 0.1s;
 }
 
-.secondary-cta form input:focus,
-.secondary-cta form input:hover {
+form input:focus,
+form input:hover {
   outline: none;
 }
 
-.secondary-cta form input:hover {
+form input:hover {
   border: 1px solid rgb(88, 96, 146);
 }
 
-.secondary-cta form input:focus {
+form input:focus {
   border: 1px solid rgb(50, 60, 117);
 }
 
-.secondary-cta form button {
+form button {
   font-size: var(--text);
   padding: var(--gutter-xx-small) var(--gutter-small);
 }
