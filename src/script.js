@@ -36,4 +36,4 @@ const onFormSubmit = function (e) {
   userEmails.push(e.target.input.value);
 };
 
-// Form
+// Enrollment Form

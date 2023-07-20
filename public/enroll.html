@@ -30,24 +30,64 @@
             </ul>
         </div>
     </nav>
-    <form>
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" placeholder="First Name" required>
-        <label for="Last-name">Last Name</label>
-        <input type="text" placeholder="Last Name" id="Last-name" required>
-        <label for="father-name">Father Name</label>
-        <input type="text" placeholder="Father Name" id="father-name" required>
-        <label for="email">Email</label>
-        <input type="email" placeholder="Email Address" id="email" required>
-        <label for="birthday">BirthDate</label>
-        <input type="date" placeholder="Date of Birth" id="birthday" required>
-        <label for="country">Country Name</label>
-        <input type="text" placeholder="Country" id="country" required>
-        <label for="city">City Name</label>
-        <input type="text" placeholder="City" id="city" required>
-        <label for="address">Street Address</label>
-        <input type="text" placeholder="Street Address" id="address" required>
-    </form>
+    <div class="row">
+
+        <form id="enrollment-form">
+            <div>
+                <div><label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="First Name" required>
+                </div>
+                <div>
+                    <label for="Last-name">Last Name</label>
+                    <input type="text" placeholder="Last Name" id="Last-name" required>
+                </div>
+                <div><label for="father-name">Father Name</label>
+                    <input type="text" placeholder="Father Name" id="father-name" required>
+                </div>
+            </div>
+            <div>
+
+                <div><label for="email">Email</label>
+                    <input type="email" placeholder="Email Address" id="email" required>
+                </div>
+                <div><label for="phone-number">Phone Number</label>
+                    <input type="number" placeholder="Phone Number" id="phone-number" required>
+                </div>
+            </div>
+            <div>
+
+                <div><label for="birthday">BirthDate</label>
+                    <input type="date" placeholder="Date of Birth" id="birthday" required>
+                </div>
+                <div>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                          <label for="female">Female</label>
+                    </div>
+                      <div><input type="radio" id="other" name="gender" value="other">
+                          <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+                <div><label for="country">Country Name</label>
+                    <input type="text" placeholder="Country" id="country" required>
+                </div>
+                <div><label for="city">City Name</label>
+                    <input type="text" placeholder="City" id="city" required>
+                </div>
+                <div><label for="address">Street Address</label>
+                    <input type="text" placeholder="Street Address" id="address" required>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 
 </html>

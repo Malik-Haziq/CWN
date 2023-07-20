@@ -416,3 +416,20 @@ section:has(.overlay) {
 .thanks-msg p {
   font-size: var(--text-medium);
 }
+
+/* ======================================== */
+/* ================  Enrollment Form  ================ */
+/* ======================================== */
+#enrollment-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter-normal);
+}
+
+#enrollment-form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: var(--gutter-normal);
+  align-items: center;
+}
