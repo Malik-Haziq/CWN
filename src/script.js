@@ -18,8 +18,6 @@ notifyModalOverlay.addEventListener("click", () => {
   notifyModal.classList.add("hidden");
 });
 
-console.log(userEmails);
-
 // -----------------  Functions
 // Notify Form
 const onFormSubmit = function (e) {

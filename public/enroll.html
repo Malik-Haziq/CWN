@@ -45,22 +45,23 @@
                     <input type="text" placeholder="Father Name" id="father-name" required>
                 </div>
             </div>
+
             <div>
 
                 <div><label for="email">Email</label>
                     <input type="email" placeholder="Email Address" id="email" required>
                 </div>
                 <div><label for="phone-number">Phone Number</label>
-                    <input type="number" placeholder="Phone Number" id="phone-number" required>
+                    <input type="tel" placeholder="Phone Number" id="phone-number" required>
                 </div>
             </div>
-            <div>
 
+            <div>
                 <div><label for="birthday">BirthDate</label>
                     <input type="date" placeholder="Date of Birth" id="birthday" required>
                 </div>
                 <div>
-                    <div>
+                    <!-- <div>
                         <input type="radio" id="male" name="gender" value="Male">
                         <label for="male">Male</label>
                     </div>
@@ -70,11 +71,16 @@
                     </div>
                       <div><input type="radio" id="other" name="gender" value="other">
                           <label for="other">Other</label>
-                    </div>
+                    </div> -->
+                    <select name="gender" id="geder" value="male">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">other</option>
+                    </select>
                 </div>
             </div>
-            <div>
 
+            <div>
                 <div><label for="country">Country Name</label>
                     <input type="text" placeholder="Country" id="country" required>
                 </div>
@@ -85,7 +91,7 @@
                     <input type="text" placeholder="Street Address" id="address" required>
                 </div>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" class="enroll-btn primary-btn">Submit</button>
         </form>
     </div>
 </body>

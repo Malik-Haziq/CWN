@@ -421,6 +421,8 @@ section:has(.overlay) {
 /* ================  Enrollment Form  ================ */
 /* ======================================== */
 #enrollment-form {
+  background: var(--primary-color-tint);
+  padding: var(--gutter-medium);
   display: flex;
   flex-direction: column;
   gap: var(--gutter-normal);
@@ -432,4 +434,11 @@ section:has(.overlay) {
   justify-content: start;
   gap: var(--gutter-normal);
   align-items: center;
+}
+
+#enrollment-form select {
+  padding: var(--gutter-nano) var(--gutter-xx-small);
+  background-color: var(--grey-color);
+  font-size: var(--text);
+  outline: none;
 }
