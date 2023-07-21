@@ -10,7 +10,7 @@ const notifyModalOverlay = document.querySelector(".overlay");
 notifyForm.addEventListener("submit", (e) => {
   onFormSubmit(e);
 });
-
+console.log(notifyForm, notifyModalCross, notifyModalOverlay);
 notifyModalCross.addEventListener("click", () => {
   notifyModal.classList.add("hidden");
 });
