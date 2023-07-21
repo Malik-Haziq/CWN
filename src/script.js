@@ -1,4 +1,5 @@
 const userEmails = [];
+
 const notifyForm = document.querySelector(".secondary-cta form");
 const notifyModal = document.querySelector("section:has(.overlay)");
 const notifyModalCross = document.querySelector(".thanks-msg img");
@@ -6,7 +7,7 @@ const notifyModalOverlay = document.querySelector(".overlay");
 
 // --------- Events
 
-form.addEventListener("submit", (e) => {
+notifyForm.addEventListener("submit", (e) => {
   onFormSubmit(e);
 });
 
@@ -26,12 +27,10 @@ const onFormSubmit = function (e) {
   const re =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (re.test(e.target.input.value.trim())) {
-    secondaryModal.classList.remove("hidden");
+    notifyModal.classList.remove("hidden");
   } else {
     alert("please enter correct email");
   }
 
   userEmails.push(e.target.input.value);
 };
-
-// Enrollment Form
