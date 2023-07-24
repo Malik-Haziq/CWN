@@ -16,7 +16,7 @@
 
   --border: rgba(195, 195, 195, 0.2);
 
-  --gradient: -webkit-linear-gradient(191deg in hwb, #60e14f 0%, #9032dc 100%);
+  --gradient: linear-gradient(to top left, #9be15d, #39b385);
 
   --gutter-huge: 15rem;
   --gutter-large: 12rem;
@@ -234,14 +234,10 @@ footer {
 }
 
 .hero-heading h1 span {
-  background: conic-gradient(
-    from 0deg at -28% 76% in oklch,
-    #60e14f 0%,
-    64%,
-    #9032dc 100%
-  );
+  background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* z-index: 100; */
 }
 
 .hero-section img {
@@ -325,7 +321,8 @@ section:has(.courses-section) {
 /* ================  CTA  ================ */
 /* ======================================== */
 section:has(.secondary-cta) {
-  /* background: url(".././assets/form-bg.svg"); */
+  background: url("../assets/form-bg.svg");
+  /* background-repeat: no-repeat; */
 }
 
 .secondary-cta {
@@ -439,4 +436,11 @@ section:has(.overlay) {
   background-color: var(--grey-color);
   font-size: var(--text);
   outline: none;
+}
+
+/* ======================================== */
+/* ================  Courses Page  ================ */
+/* ======================================== */
+.courses-page {
+  padding: var(--gutter-medium);
 }
