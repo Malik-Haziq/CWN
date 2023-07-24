@@ -36,33 +36,33 @@
         <form id="enrollment-form">
             <div>
                 <div><label for="first-name">First Name</label>
-                    <input type="text" id="first-name" placeholder="First Name" required>
+                    <input type="text" id="first-name" placeholder="First Name" data-name="firstName" required>
                 </div>
                 <div>
                     <label for="Last-name">Last Name</label>
-                    <input type="text" placeholder="Last Name" id="Last-name" required>
+                    <input type="text" placeholder="Last Name" id="Last-name" data-name="lastName" required>
                 </div>
                 <div><label for="father-name">Father Name</label>
-                    <input type="text" placeholder="Father Name" id="father-name" required>
+                    <input type="text" placeholder="Father Name" id="father-name" data-name="fatherName" required>
                 </div>
             </div>
 
             <div>
 
                 <div><label for="email">Email</label>
-                    <input type="email" placeholder="Email Address" id="email" required>
+                    <input type="email" placeholder="Email Address" id="email" data-name="email" required>
                 </div>
                 <div><label for="phone-number">Phone Number</label>
-                    <input type="tel" placeholder="Phone Number" id="phone-number" required>
+                    <input type="tel" placeholder="Phone Number" id="phone-number" data-name="phoneNumber" required>
                 </div>
             </div>
 
             <div>
                 <div><label for="birthday">BirthDate</label>
-                    <input type="date" placeholder="Date of Birth" id="birthday" required>
+                    <input type="date" placeholder="Date of Birth" id="birthday" data-name="birthday" required>
                 </div>
                 <div>
-                    <select name="gender" id="geder" value="male">
+                    <select name="gender" id="geder" value="male" data-name="gender">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="other">other</option>
@@ -72,19 +72,19 @@
 
             <div>
                 <div><label for="country">Country Name</label>
-                    <input type="text" placeholder="Country" id="country" required>
+                    <input type="text" placeholder="Country" id="country" data-name="country" required>
                 </div>
                 <div><label for="city">City Name</label>
-                    <input type="text" placeholder="City" id="city" required>
+                    <input type="text" placeholder="City" id="city" data-name="city" required>
                 </div>
                 <div><label for="address">Street Address</label>
-                    <input type="text" placeholder="Street Address" id="address" required>
+                    <input type="text" placeholder="Street Address" id="address" data-name="address" required>
                 </div>
             </div>
             <div>
                 <div>
                     <label for="course">Course</label>
-                    <input type="text" placeholder="Course Name" id="course" required>
+                    <input type="text" placeholder="Course Name" id="course" data-name="course" required>
                 </div>
             </div>
             <button type="submit" class="enroll-btn primary-btn">Submit</button>
