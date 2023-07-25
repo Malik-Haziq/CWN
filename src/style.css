@@ -17,6 +17,7 @@
   --border: rgba(195, 195, 195, 0.2);
 
   --gradient: linear-gradient(to top left, #9be15d, #39b385);
+  --gradient-hover: linear-gradient(to top right, #9be15d, #39b385);
 
   --gutter-huge: 15rem;
   --gutter-large: 12rem;
@@ -96,16 +97,17 @@ p {
 }
 
 .secondary-btn {
-  background: var(--grey-color);
+  background: var(--gradient);
   color: var(--dark);
   font-weight: bold;
   border-radius: 50px;
   border: none;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .primary-btn {
-  background: var(--main-color);
+  background: var(--gradient);
   color: var(--dark);
   font-weight: bold;
   padding: var(--gutter-xx-small) var(--gutter-small);
@@ -113,6 +115,21 @@ p {
   border-radius: 50px;
   cursor: pointer;
 }
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  background: var(--gradient-hover);
+  scale: 1.02;
+}
+
+.primary-btn:focus {
+  transform: scale(1.02);
+}
+
+.secondary-btn:focus {
+  transform: scale(1);
+}
+
 /* ======================================== */
 /* ==================  Classes  ============= */
 /* ======================================== */
