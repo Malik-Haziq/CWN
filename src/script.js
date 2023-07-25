@@ -1,6 +1,7 @@
 const userEmails = [];
 
 const notifyForm = document.querySelector(".secondary-cta form");
+const notifyInput = document.querySelector(".secondary-cta form input");
 const notifyModal = document.querySelector("section:has(.overlay)");
 const notifyModalCross = document.querySelector(".thanks-msg img");
 const notifyModalOverlay = document.querySelector(".overlay");
@@ -9,6 +10,7 @@ const notifyModalOverlay = document.querySelector(".overlay");
 
 notifyForm.addEventListener("submit", (e) => {
   onFormSubmit(e);
+  notifyInput.value = "";
 });
 console.log(notifyForm, notifyModalCross, notifyModalOverlay);
 notifyModalCross.addEventListener("click", () => {
