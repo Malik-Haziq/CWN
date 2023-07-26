@@ -235,11 +235,21 @@ footer {
 /* ======================================== */
 
 .hero-section {
-  height: 70vh;
+  height: 60vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-image: url(.././assets/hero-pattern.svg);
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .hero-heading h1 {
