@@ -3,7 +3,7 @@
 /* ======================================== */
 
 :root {
-  --primary-color: #00295d;
+  --primary-color: #3900ab;
   --primary-color-tint: #00367b;
   --main-color: #60e14f;
   --grey-color: #edf1d6;
@@ -130,6 +130,17 @@ p {
   transform: scale(1);
 }
 
+.card {
+  background: #4a00e0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid var(--sub);
+}
+
 /* ======================================== */
 /* ==================  Classes  ============= */
 /* ======================================== */
@@ -140,6 +151,13 @@ p {
 
 .secondary-heading {
   position: relative;
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gutter-medium);
 }
 
 .secondary-heading::before {
@@ -242,6 +260,7 @@ footer {
   background-image: url(.././assets/hero-pattern.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background: linear-gradient(0, 0, 0, 0.9);
 }
 
 .hero-heading {
@@ -254,11 +273,11 @@ footer {
 
 .hero-heading h1 {
   margin-bottom: var(--gutter-nano);
-  line-height: 1;
+  line-height: 0.9;
 }
 
 .hero-heading p {
-  margin-bottom: var(--gutter-normal);
+  margin-bottom: var(--gutter-small);
 }
 
 .hero-heading h1 span {
@@ -290,19 +309,8 @@ section:has(.courses-section) {
   gap: var(--gutter-medium);
 }
 
-.course-cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gutter-medium);
-  flex-wrap: wrap;
-}
-
-.card {
+.course-card {
   width: 300px;
-  background: #00367b;
-  border-radius: var(--radius);
-  overflow: hidden;
 }
 
 .card-img img {
@@ -394,6 +402,7 @@ form input:focus {
 form button {
   font-size: var(--text);
   padding: var(--gutter-xx-small) var(--gutter-small);
+  background: var(--grey-color);
 }
 
 /* ======================================== */
