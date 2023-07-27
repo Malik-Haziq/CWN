@@ -305,7 +305,6 @@ header {
 /* ================  Courses  ================ */
 /* ======================================== */
 section:has(.courses-section) {
-  /* background-image: url(.././assets/Images/courses_images/bg.svg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -450,7 +449,6 @@ section:has(.service-section) {
 /* ======================================== */
 section:has(.secondary-cta) {
   background: url("../assets/form-bg.svg");
-  /* background-repeat: no-repeat; */
 }
 
 .secondary-cta {
@@ -545,13 +543,10 @@ section:has(.overlay) {
 /* ================  Enrollment Form  ================ */
 /* ======================================== */
 #enrollment-form {
-  /* background: var(--primary-color-tint); */
   background: var(--main-color);
   color: var(--dark);
   padding: var(--gutter-medium);
   margin: var(--gutter-large) 0;
-  /* display: flex;
-  flex-direction: column; */
   display: grid;
   grid-template-rows: repeat(7, 1fr);
   grid-template-columns: repeat(3, 1fr);
@@ -593,14 +588,6 @@ section:has(.overlay) {
   grid-column: 1;
   grid-row: 7;
 }
-
-/* #enrollment-form{
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  gap: var(--gutter-normal);
-  align-items: center;
-} */
 
 #enrollment-form label {
   padding-left: var(--gutter-micro);
