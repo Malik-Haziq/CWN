@@ -160,6 +160,14 @@ p {
   gap: var(--gutter-xx-small);
 }
 
+.flexsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gutter-medium);
+}
+
 .secondary-heading::before {
   content: "";
   position: absolute;
@@ -253,7 +261,7 @@ footer {
 /* ======================================== */
 
 header {
-  background: url(../assets/magicpattern-grid-pattern-1690449353154.png);
+  background: url(../assets/Images/hero/bg-pattern.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -364,6 +372,12 @@ section:has(.courses-section) {
   font-weight: 600;
 }
 
+/* ======================================== */
+/* ================ Get Started  ================ */
+/* ======================================== */
+.gs-block img {
+  width: 500px;
+}
 /* ======================================== */
 /* ================  Our services  ================ */
 /* ======================================== */
