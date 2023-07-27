@@ -374,6 +374,18 @@ section:has(.courses-section) {
   justify-content: center;
   gap: var(--gutter-medium);
   padding: 0 var(--gutter-large);
+  position: relative;
+}
+
+section:has(.service-section) {
+  background: url("../assets/Images/services/bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service-section > img {
+  position: absolute;
 }
 
 .service-card {
@@ -381,6 +393,12 @@ section:has(.courses-section) {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.service-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: var(--gutter-xx-small);
 }
 
 .service-card h4 {
