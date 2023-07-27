@@ -160,7 +160,7 @@ p {
   gap: var(--gutter-xx-small);
 }
 
-.flexsection {
+.flex-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -272,7 +272,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-image: url(.././assets/hero-pattern.svg); */
   background-repeat: no-repeat;
   background-position: center;
   background: linear-gradient(0, 0, 0, 0.9);
@@ -375,9 +374,41 @@ section:has(.courses-section) {
 /* ======================================== */
 /* ================ Get Started  ================ */
 /* ======================================== */
-.gs-block img {
-  width: 500px;
+
+.gs-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
 }
+
+/* .gs-block:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+} */
+
+/* .gs-block:nth-child(2) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.gs-block:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+} */
+
+.gs-block img {
+  max-width: 400px;
+}
+
+.gs-text h3 {
+  margin-bottom: var(--gutter-nano);
+}
+
+.gs-text p {
+  color: var(--sub);
+}
+
 /* ======================================== */
 /* ================  Our services  ================ */
 /* ======================================== */
