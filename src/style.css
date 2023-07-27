@@ -4,8 +4,8 @@
 
 :root {
   --primary-color: #3900ab;
-  --primary-color-tint: #00367b;
-  --main-color: #60e14f;
+  --primary-color-tint: #4502cc;
+  --main-color: #4fc040;
   --grey-color: #edf1d6;
   --accent: #9032dc;
 
@@ -123,7 +123,7 @@ p {
 }
 
 .primary-btn:focus {
-  transform: scale(1.02);
+  transform: scale(1);
 }
 
 .secondary-btn:focus {
@@ -138,7 +138,7 @@ p {
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   background: rgba(255, 255, 255, 0.01);
-  border: 1px solid var(--sub);
+  border: 1px solid var(--border);
 }
 
 /* ======================================== */
@@ -157,7 +157,7 @@ p {
   display: grid;
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--gutter-medium);
+  gap: var(--gutter-xx-small);
 }
 
 .secondary-heading::before {
@@ -252,12 +252,19 @@ footer {
 /* ================  Hero Section  ================ */
 /* ======================================== */
 
+header {
+  background: url(../assets/magicpattern-grid-pattern-1690449353154.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .hero-section {
-  height: 60vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(.././assets/hero-pattern.svg);
+  /* background-image: url(.././assets/hero-pattern.svg); */
   background-repeat: no-repeat;
   background-position: center;
   background: linear-gradient(0, 0, 0, 0.9);
@@ -295,7 +302,7 @@ footer {
 /* ================  Courses  ================ */
 /* ======================================== */
 section:has(.courses-section) {
-  background-image: url(.././assets/Images/courses_images/bg.svg);
+  /* background-image: url(.././assets/Images/courses_images/bg.svg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -307,6 +314,10 @@ section:has(.courses-section) {
   align-items: center;
   justify-content: center;
   gap: var(--gutter-medium);
+}
+
+.course-cards {
+  gap: var(--gutter-normal);
 }
 
 .course-card {
@@ -351,6 +362,35 @@ section:has(.courses-section) {
 
 .course-price {
   font-weight: 600;
+}
+
+/* ======================================== */
+/* ================  Our services  ================ */
+/* ======================================== */
+.service-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gutter-medium);
+  padding: 0 var(--gutter-large);
+}
+
+.service-card {
+  padding: var(--gutter-xx-small) var(--gutter-x-small);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-card h4 {
+  margin-bottom: var(--gutter-nano);
+}
+
+.service-card p {
+  font-size: var(--text-medium);
+  color: var(--sub);
+  line-height: 1.4;
 }
 
 /* ======================================== */
@@ -453,7 +493,9 @@ section:has(.overlay) {
 /* ================  Enrollment Form  ================ */
 /* ======================================== */
 #enrollment-form {
-  background: var(--primary-color-tint);
+  /* background: var(--primary-color-tint); */
+  background: var(--main-color);
+  color: var(--dark);
   padding: var(--gutter-medium);
   margin: var(--gutter-large) 0;
   display: flex;
@@ -467,6 +509,10 @@ section:has(.overlay) {
   justify-content: start;
   gap: var(--gutter-normal);
   align-items: center;
+}
+
+#enrollment-form label {
+  padding-left: var(--gutter-micro);
 }
 
 #enrollment-form select {
