@@ -6,13 +6,14 @@ const notifyModal = document.querySelector("section:has(.overlay)");
 const notifyModalCross = document.querySelector(".thanks-msg img");
 const notifyModalOverlay = document.querySelector(".overlay");
 
+const skillName = document.querySelector(".skill-name");
+
 // --------- Events
 
 notifyForm.addEventListener("submit", (e) => {
   onFormSubmit(e);
   notifyInput.value = "";
 });
-console.log(notifyForm, notifyModalCross, notifyModalOverlay);
 notifyModalCross.addEventListener("click", () => {
   notifyModal.classList.add("hidden");
 });
@@ -36,3 +37,12 @@ const onFormSubmit = function (e) {
 
   userEmails.push(e.target.input.value);
 };
+
+// =====================  Language Names animation
+const skillNamesArr = [
+  "Web Development",
+  "Frontend Development",
+  "Backend Development",
+  "Programming",
+  "Coding",
+];
