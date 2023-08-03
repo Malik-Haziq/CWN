@@ -17,7 +17,7 @@
   --border: rgba(195, 195, 195, 0.2);
 
   --gradient: linear-gradient(to top left, #9be15d, #39b385);
-  --gradient-hover: linear-gradient(to top right, #9be15d, #39b385);
+  /* --gradient-hover: linear-gradient(to top right, #9be15d, #39b385); */
 
   --gutter-huge: 15rem;
   --gutter-large: 12rem;
