@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: var(--primary-color);
   color: var(--text-color);
   font-size: var(--text);
@@ -257,29 +257,19 @@ footer {
 /* ================  Hero Section  ================ */
 /* ======================================== */
 
-header {
-  /* background: url(../assets/Images/hero/bg-pattern.png);  */     
-  /* background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} */
-
 .hero-section {
   height: 70vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background: linear-gradient(0, 0, 0, 0.9);
+  justify-content: space-between;
 }
 
 .hero-heading {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .hero-heading h1 {
@@ -298,7 +288,7 @@ header {
   /* z-index: 100; */
 }
 
-.hero-section img {
+.hero-img  {
   max-width: 600px;
 }
 
@@ -386,8 +376,8 @@ section:has(.courses-section) {
   font-family: sans-serif;
 }
 
-.gs-block img {
-  max-width: 450px;
+.gs-grid img {
+  max-width: 500px;
 }
 
 .gs-text h3 {
