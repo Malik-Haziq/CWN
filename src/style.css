@@ -35,12 +35,19 @@
   --h4: 2rem;
   --text: 1.8rem;
   --text-medium: 1.4rem;
-  --text-small: 1.2rem;
 
   --max-width: 1400px;
 
   --radius: 12px;
 }
+
+@media (max-width: 1380px) {
+  :root{
+    --h1: 4.4rem;
+    /* --text-medium: 1.2rem; */
+  }
+}
+
 
 /* ======================================== */
 /* ========  Basic Setup  =========== */
@@ -56,6 +63,12 @@
 
 html {
   font-size: 62.5%;
+}
+
+@media (max-width: 1140px) {
+  html{
+    font-size: 55%;
+  }
 }
 
 body {
@@ -127,7 +140,6 @@ p {
 }
 
 .card {
-  /* background: #4a00e0; */
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -136,6 +148,8 @@ p {
   background: rgba(255, 255, 255, 0.01);
   border: 2px solid var(--border);
 }
+
+
 
 /* ======================================== */
 /* ==================  Classes  ============= */
@@ -162,8 +176,9 @@ p {
 .grid {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(3, 1fr);
   gap: var(--gutter-xx-small);
+  grid-template-columns: repeat(3, 1fr);
+
 }
 
 .flex-section {
@@ -265,12 +280,8 @@ footer {
   justify-content: space-between;
 }
 
-.hero-heading {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* flex-direction: column; */
-  /* text-align: center; */
+.hero-heading{
+  flex-basis: auto;
 }
 
 .hero-heading h1 {
@@ -290,8 +301,27 @@ footer {
 }
 
 .hero-img  {
-  max-width: 600px;
+  max-width: 700px;
+  flex-basis: 1100px;
 }
+
+.hero-img img{
+  width: 100%;
+}
+
+@media (max-width: 1480px) {
+  .row:has(.hero-section){
+    margin: 0 70px;
+  }
+} 
+
+/* @media (max-width: 915px) {
+  .hero-section{
+    flex-direction: column;
+    text-align: center;
+    margin-top: var(--gutter-huge)  ;
+  }
+} */
 
 /* ======================================== */
 /* ================  Courses  ================ */
@@ -303,11 +333,12 @@ section:has(.courses-section) {
 }
 
 .courses-section {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: var(--gutter-medium);
+  flex-wrap: wrap; */
 }
 
 .course-cards {
@@ -358,6 +389,12 @@ section:has(.courses-section) {
   font-weight: 600;
 }
 
+@media (max-width: 1080px) {
+  .course-cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* ======================================== */
 /* ================ Get Started  ================ */
 /* ======================================== */
@@ -389,6 +426,12 @@ section:has(.courses-section) {
   color: var(--sub);
 }
 
+@media (max-width: 1480px) {
+  .row:has(.gs-grid){
+    margin: 0 70px;
+  }
+}
+
 /* ======================================== */
 /* ================  Our services  ================ */
 /* ======================================== */
@@ -404,9 +447,9 @@ section:has(.courses-section) {
 
 section:has(.service-section) {
   /* background: url("../assets/Images/services/bg.svg"); */
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .service-section > img {
@@ -434,6 +477,18 @@ section:has(.service-section) {
   font-size: var(--text-medium);
   color: var(--sub);
   line-height: 1.4;
+}
+
+@media (max-width: 1080px) {
+  .service-section{
+    padding: 0 var(--gutter-medium);
+  }
+}
+
+@media (max-width: 972px) {
+  .service-cards{
+    grid-template-columns: repeat(2,1fr);
+  }
 }
 
 /* ======================================== */
