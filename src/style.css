@@ -44,14 +44,18 @@
 @media (max-width: 1380px) {
   :root{
     --h1: 4.4rem;
-    /* --text-medium: 1.2rem; */
   }
 }
 
 @media (max-width: 918px) {
   :root{
     --h1: 4rem;
-    /* --text-medium: 1.2rem; */
+  }
+}
+
+@media (max-width: 790px) {
+  :root{
+    --h1: 4.4rem;
   }
 }
 
@@ -223,8 +227,10 @@ p {
   background-position: 0% 50%;
 }
 
-.hidden {
-  display: none;
+
+
+.show{
+  display: block;
 }
 
 /* ======================================== */
@@ -241,6 +247,7 @@ nav {
   padding: var(--gutter-nano) var(--gutter-large);
   position: relative;
   background-color: var(--primary-color);
+  z-index: 2;
 }
 
 footer {
@@ -260,6 +267,10 @@ footer {
 .nav-links ul li,
 .footer-links ul li {
   list-style-type: none;
+}
+
+.menu-bar{
+  display: none;
 }
 
 .footer-links ul li a:hover {
@@ -284,11 +295,12 @@ footer {
     left: 0;
     background: var(--primary-color);
     width: 100%;
-    z-index: 1;
+    /* z-index: 1; */
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(1px);
     transform: translateY(-550px);
+    transition: 1s;
   }
 
   .nav-links ul{
@@ -301,6 +313,9 @@ footer {
      border-bottom: 2px solid var(--border);
      padding-bottom: var(--gutter-xx-small);
   
+  }
+  .menu-bar{
+    display: block;
   }
 }
 
@@ -708,4 +723,11 @@ section:has(.overlay) {
 /* ======================================== */
 .courses-page {
   padding: var(--gutter-medium);
+}
+
+/* ======================================== */
+/* ================  Class  ================ */
+/* ======================================== */
+.hidden {
+  display: none;
 }
