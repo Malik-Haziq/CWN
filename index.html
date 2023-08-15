@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-------------- Fonts ----------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!----------------- Style Sheet ------------------>
     <link rel="stylesheet" href="./src/style.css" />
@@ -17,398 +19,549 @@
     <script defer src="./src/script.js"></script>
 
     <title>Learn Programming Online | CWN (Code With Naqvi)</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="nav-logo">
-                <a href="../index.html"><img src="../assets/short-logo.svg" alt="cwn logo" /></a>
+      <nav>
+        <div class="nav-logo">
+          <a href="../index.html"
+            ><img src="assets/logo.svg" alt="cwn logo"
+          /></a>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html" class="line-on-hover">Home</a></li>
+            <li>
+              <a href="./public/courses.html" class="line-on-hover">Courses</a>
+            </li>
+            <li><a href="#" class="line-on-hover">Company</a></li>
+            <li><a href="#" class="line-on-hover">About</a></li>
+            <li><a href="#" class="line-on-hover">Team</a></li>
+          </ul>
+        </div>
+        <img src="./assets/icons/menu.svg" alt="menu icon" class="menu-bar" />
+        <img
+          src="./assets/icons/cross.svg"
+          alt="cross icon"
+          class="xmark hidden"
+        />
+      </nav>
+      <section>
+        <div class="row">
+          <main class="hero-section">
+            <div class="hero-heading">
+              <h1>
+                Building Bright Futures in <br />
+                <span class="skill-name">Web Development</span>
+              </h1>
+              <p>
+                Unlock your coding potential, gain hands-on experience, and
+                master in-demand skills with tailored one-on-one tutoring
+              </p>
+              <a href="/public/enroll.html" class="primary-btn">Enroll Now</a>
             </div>
-            <div class="nav-links ">
-                <ul>
-                    <li><a href="index.html" class="line-on-hover">Home</a></li>
-                    <li>
-                        <a href="./public/courses.html" class="line-on-hover">Courses</a>
-                    </li>
-                    <li><a href="#" class="line-on-hover">Company</a></li>
-                    <li><a href="#" class="line-on-hover">About</a></li>
-                    <li><a href="#" class="line-on-hover">Team</a></li>
-                </ul>
+            <div class="hero-img">
+              <img src="/assets/Images/hero/Programmer.svg" alt="programmer" />
             </div>
-            <img src="./assets/icons/menu.svg" alt="menu icon" class="menu-bar"  >
-            <img src="./assets/icons/cross.svg" alt="cross icon" class="xmark hidden">
-        </nav>
-        <section>
-            <div class="row">
-                <main class="hero-section">
-                    <div class="hero-heading">
-                        <h1>
-                            Building Bright Futures in <br> <span class="skill-name">Web Development</span>
-                        </h1>
-                        <p>
-                            Unlock your coding potential, gain hands-on experience, and
-                            master in-demand skills with tailored 
-                            one-on-one tutoring
-                        </p>
-                        <a href="/public/enroll.html" class="primary-btn">Enroll Now</a>
-                    </div>
-                    <div class="hero-img">
-                        <img src="/assets/Images/hero/Programmer.svg" alt="programmer">
-                    </div>
-                </main>
-            </div>
-        </section>
+          </main>
+        </div>
+      </section>
     </header>
 
     <!-- --------------------------------------  Courses -------------------------------- -->
     <section>
-        <div class="row">
-            <main class="courses-section flex-section">
-                <h2 class="secondary-heading">Courses We Offer</h2>
+      <div class="row">
+        <main class="courses-section flex-section">
+          <h2 class="secondary-heading">Courses We Offer</h2>
 
-                <div class="course-cards grid">
-                    <div class="card course-card">
-                        <div class="card-img">
-                            <img src="./assets/Images/courses_images/html-css-min.png" alt="html css image"
-                                loading="lazy" />
-                        </div>
-                        <div class="card-body">
-                            <h4 class="course-title">HTML CSS</h4>
-                            <ul class="course-desc">
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>2 Month duration</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>one-on-one live sessions</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>Saturday-Sunday Classes</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>8 classes per month</p>
-                                </li>
-                            </ul>
-                            <div class="course-details">
-                                <a href="/public/enroll.html" class="course-enroll-btn secondary-btn">Enroll Now</a>
-                                <span class="course-price">$69.99</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card course-card">
-                        <div class="card-img">
-                            <img src="./assets/Images/courses_images/javascript-min.jpg" alt="javascript image"
-                                loading="lazy" />
-                        </div>
-                        <div class="card-body">
-                            <h4 class="course-title">javascript</h4>
-                            <ul class="course-desc">
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>2 Month duration</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>one-on-one live sessions</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>Saturday-Sunday Classes</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>8 classes per month</p>
-                                </li>
-                            </ul>
-                            <div class="course-details">
-                                <a href="/public/enroll.html" class="course-enroll-btn secondary-btn">Enroll Now</a>
-                                <span class="course-price">$69.99</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card course-card">
-                        <div class="card-img">
-                            <img src="./assets/Images/courses_images/c++-min.png" alt="c plus plus image"
-                                loading="lazy" />
-                        </div>
-                        <div class="card-body">
-                            <h4 class="course-title">C++</h4>
-                            <ul class="course-desc">
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>3 Month duration</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>one-on-one live sessions</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>Saturday-Sunday Classes</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>8 classes per month</p>
-                                </li>
-                            </ul>
-                            <div class="course-details">
-                                <a href="/public/enroll.html" class="course-enroll-btn secondary-btn">Enroll Now</a>
-                                <span class="course-price">$59.99</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card course-card">
-                        <div class="card-img">
-                            <img src="./assets/Images/courses_images/web-development-min.jpg"
-                                alt="Web Development image" loading="lazy" />
-                        </div>
-                        <div class="card-body">
-                            <h4 class="course-title">Web Development</h4>
-                            <ul class="course-desc">
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>6 Month duration</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>one-on-one live sessions</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>Saturday-Sunday Classes</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>8 classes per month</p>
-                                </li>
-                            </ul>
-                            <div class="course-details">
-                                <a href="/public/enroll.html" class="course-enroll-btn secondary-btn">Enroll Now</a>
-                                <span class="course-price">$199.99</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card course-card">
-                        <div class="card-img">
-                            <img src="./assets/Images/courses_images/ror-min.png" alt="Ruby on Rails image" class="tick"
-                                loading="lazy" />
-                        </div>
-                        <div class="card-body">
-                            <h4 class="course-title">Ruby on Rails</h4>
-                            <ul class="course-desc">
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>2 Month duration</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>one-on-one live sessions</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>Saturday-Sunday Classes</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/Images/courses_images/tick.svg" alt="tick" />
-                                    <p>8 classes per month</p>
-                                </li>
-                            </ul>
-                            <div class="course-details">
-                                <a href="/public/enroll.html" class="course-enroll-btn secondary-btn">Enroll Now</a>
-                                <span class="course-price">$69.99</span>
-                            </div>
-                        </div>
-                    </div>
+          <div class="course-cards grid">
+            <div class="card course-card">
+              <div class="card-img">
+                <img
+                  src="./assets/Images/courses_images/html-css-min.png"
+                  alt="html css image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="course-title">HTML CSS</h4>
+                <ul class="course-desc">
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>2 Month duration</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>one-on-one live sessions</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>Saturday-Sunday Classes</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>8 classes per month</p>
+                  </li>
+                </ul>
+                <div class="course-details">
+                  <a
+                    href="/public/enroll.html"
+                    class="course-enroll-btn secondary-btn"
+                    >Enroll Now</a
+                  >
+                  <span class="course-price">$69.99</span>
                 </div>
-            </main>
-        </div>
+              </div>
+            </div>
+
+            <div class="card course-card">
+              <div class="card-img">
+                <img
+                  src="./assets/Images/courses_images/javascript-min.jpg"
+                  alt="javascript image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="course-title">javascript</h4>
+                <ul class="course-desc">
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>2 Month duration</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>one-on-one live sessions</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>Saturday-Sunday Classes</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>8 classes per month</p>
+                  </li>
+                </ul>
+                <div class="course-details">
+                  <a
+                    href="/public/enroll.html"
+                    class="course-enroll-btn secondary-btn"
+                    >Enroll Now</a
+                  >
+                  <span class="course-price">$69.99</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card course-card">
+              <div class="card-img">
+                <img
+                  src="./assets/Images/courses_images/c++-min.png"
+                  alt="c plus plus image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="course-title">C++</h4>
+                <ul class="course-desc">
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>3 Month duration</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>one-on-one live sessions</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>Saturday-Sunday Classes</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>8 classes per month</p>
+                  </li>
+                </ul>
+                <div class="course-details">
+                  <a
+                    href="/public/enroll.html"
+                    class="course-enroll-btn secondary-btn"
+                    >Enroll Now</a
+                  >
+                  <span class="course-price">$59.99</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card course-card">
+              <div class="card-img">
+                <img
+                  src="./assets/Images/courses_images/web-development-min.jpg"
+                  alt="Web Development image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="course-title">Web Development</h4>
+                <ul class="course-desc">
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>6 Month duration</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>one-on-one live sessions</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>Saturday-Sunday Classes</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>8 classes per month</p>
+                  </li>
+                </ul>
+                <div class="course-details">
+                  <a
+                    href="/public/enroll.html"
+                    class="course-enroll-btn secondary-btn"
+                    >Enroll Now</a
+                  >
+                  <span class="course-price">$199.99</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card course-card">
+              <div class="card-img">
+                <img
+                  src="./assets/Images/courses_images/ror-min.png"
+                  alt="Ruby on Rails image"
+                  class="tick"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="course-title">Ruby on Rails</h4>
+                <ul class="course-desc">
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>2 Month duration</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>one-on-one live sessions</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>Saturday-Sunday Classes</p>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/Images/courses_images/tick.svg"
+                      alt="tick"
+                    />
+                    <p>8 classes per month</p>
+                  </li>
+                </ul>
+                <div class="course-details">
+                  <a
+                    href="/public/enroll.html"
+                    class="course-enroll-btn secondary-btn"
+                    >Enroll Now</a
+                  >
+                  <span class="course-price">$69.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
     </section>
 
     <!-- -------------------------------------------  Get Started ---------------------------------- -->
     <section>
-        <div class="row">
-            <main class="started-section flex-section">
-                <h2 class="secondary-heading">Get Started</h2>
-                <div class="gs-grid">
-                    <div class="gs-block">
-
-                        <div class="gs-text">
-                            <p class="step-number">01</p>
-                            <h3>Choose a Course</h3>
-                            <p>
-                                Choose our diverse range of courses, covering essential
-                                programming languages, frameworks, and concepts.
-                            </p>
-                        </div>
-                        <img src="./assets/Images/get-started/choose.svg" alt="choose course image" loading="lazy" />
-                    </div>
-                    <div class="gs-block">
-
-                        <div class="gs-text">
-                            <p class="step-number">02</p>
-                            <h3>Schedule a Free Consultation</h3>
-                            <p>
-                                Book a complimentary session to create a personalized learning
-                                plan with our experienced tutors.
-                            </p>
-                        </div>        
-                        <img src="./assets/Images/get-started/learning.svg" alt="choose course image" loading="lazy" />
-                    </div>
-                    <div class="gs-block">
-
-                        <div class="gs-text">
-                            <p class="step-number">03</p>
-                            <h3>Start Learning One-on-One</h3>
-                            <p>
-                                Dive into customized tutoring with experienced mentors and
-                                embark on your path to coding excellence.
-                            </p>
-                            
-                        </div>
-                        <img src="./assets/Images/get-started/consultation.svg" alt="consultation image" loading="lazy" />
-                    </div>
-                </div>
-            </main>
-        </div>
+      <div class="row">
+        <main class="started-section flex-section">
+          <h2 class="secondary-heading">Get Started</h2>
+          <div class="gs-grid">
+            <div class="gs-block">
+              <div class="gs-text">
+                <p class="step-number">01</p>
+                <h3>Choose a Course</h3>
+                <p>
+                  Choose our diverse range of courses, covering essential
+                  programming languages, frameworks, and concepts.
+                </p>
+              </div>
+              <img
+                src="./assets/Images/get-started/choose.svg"
+                alt="choose course image"
+                loading="lazy"
+              />
+            </div>
+            <div class="gs-block">
+              <div class="gs-text">
+                <p class="step-number">02</p>
+                <h3>Schedule a Free Consultation</h3>
+                <p>
+                  Book a complimentary session to create a personalized learning
+                  plan with our experienced tutors.
+                </p>
+              </div>
+              <img
+                src="./assets/Images/get-started/learning.svg"
+                alt="choose course image"
+                loading="lazy"
+              />
+            </div>
+            <div class="gs-block">
+              <div class="gs-text">
+                <p class="step-number">03</p>
+                <h3>Start Learning One-on-One</h3>
+                <p>
+                  Dive into customized tutoring with experienced mentors and
+                  embark on your path to coding excellence.
+                </p>
+              </div>
+              <img
+                src="./assets/Images/get-started/consultation.svg"
+                alt="consultation image"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </main>
+      </div>
     </section>
 
     <!-- --------------------------------------  Our Services -------------------------------- -->
 
     <section>
-        <div class="row">
-            <main class="service-section flex-section">
-                <h2 class="secondary-heading">Why Us</h2>
-                <div class="service-cards grid">
-                    <div class="service-card card">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACuUlEQVR4nO2Zz2sTURDHJyr++AfUk3jx4LFWz+LFq3gItjRvNqCgHorEFkVIZi6KJ7X/RBXqH+BF7M1jd17MqRcPbQVFQapQSq0rs7GkNmkJdl92X/o+MLBkIcn3+2bnzZsFCAQCgUAgEAgEAoFAIBAIBNySQClqNkajJk2gpZqGXk9YvqD3YFiJWnzaCM8YSytoOekV6T2hF2PNR6dgaEigVLH8AC3/3E14Vwj9QOFp7zMi+sjH0dKrvoXvzAjhl/od4CUJlFBo9n/Fd0yg115mQqWd9vsSv82EKfCJivBJI7yalQFaE7SIgi8Y4ZnMxHfqwXPwAU74EFr+lLkBlla8qAWmyRezFr8VabNUdKK0w3NjAFoah6KDwtOuDPBiNzBCU+4M4PtQdNDSuMMMuAFFJ2o2Rt0ZUB8BT1rgpczFW172YhtU9EjrYAd4Bge5FR7zbUaAmW6HVIODehxG4Tlvnv2d6DBDhxr7SP1ZfwciWyRQSpsjHXP1vd1p/aCatyvfCy1ieqTV7WyPFV/Saq9FFIaWRDOiPtLuGNtjcb1Om5xhWvFAINCFbml6WKoIjxnhO9ikhxp6rZ/pvcnFyWMwNCRQqi40LhmhJygsaGmjj65vw1iKUfixjte8LIzlFh9FYTSWWxmcAhfR0r3y+9oJ8OPNL03s9QJ0H0YsF3omGMV81liaz1p4DyPemRafgSKBceMKWvrsWvy2A9JXjPkqFAGM6TZa/jUw8Z3Q37yVq/iK0E0jtJmD+L+ZQL9R6G4u4jFuXE//QF7it2qC0KaxjWsDFV9dqJ8zlr/nLb5jAq+aD/XzAxFfnisfThuVAgj/xwRL8eV5PuLcACNk8ha7W1QsV90bYOlN3kL3eBTeDsAA/lJcA+ibewOE1gpswJpzA9DSUxRaz1tsVwit66nTuQGBAAwVfwBhANySHdAu9AAAAABJRU5ErkJggg==">
-                        <h4>Personalized Approach</h4>
-                        <p>
-                            Tailored tutoring to fit your unique learning style and coding
-                            goals, ensuring a customized and effective learning experience.
-                        </p>
-                    </div>
-                    <div class="service-card card">
-                        <img src="data:image/png;base64,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">
-                        <h4>Experienced Tutors</h4>
-                        <p>
-                            Learn from industry professionals with real-world expertise,
-                            gaining valuable insights and mentorship to excel in web
-                            development.
-                        </p>
-                    </div>
-                    <div class="service-card card">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEk0lEQVR4nO2bW2hcZRDH1/sNVGxVRJCqKFZfvEtFLd4RwVuJtOzObIIQEOxDFUzb5Mzfp+KDj7WgoC0FK1aovngtdlW0lrrkzJyEaouSB2mlitgqWpsKkTmbTZNms+kmZveczRkY2N3zXXZ+Z76Z73JOLpdJJpk0Ks8M4iK24JFihO651lzShEyKpPiDDSPNUO9z5b6VZ+WSIBzidjb82yzjqwAKhhc5DO5ttf05MmxopvFVAGR4iUz+oihY2lIAbPJZqwBUvsvhggZ3tAwAmZRaCwAjZDhEEW6dtwA4hiC/5w03z1sAXPGEXzjsu2HeAuBKTDhIA32L5zEAjLDKTzzQe3XbAujY2nEaqQT1ypDJEA3iirYEkO/H9RQFS1jlaF0Iih84XHt5OgAovmfFelI8T4qXWbGzTtmtuZHcKW4cRXignhYjXJdoAKTyXdGC+90gby+/C+dXP/tUl1R+ru3i2EEqNB2ACoTglkQCIMO24hDO7upfczEbXmHDgdEg9qd7Q3cZ53ZFuMpne7OCbFJKHgDF593l7jNIcVecv2sD+ioOeBY8zoZd7QNA5Whnf981pLg2vtu1AX3JkfTkLbj7eF91Ul/KALzndVnlgyniwm/58trLxvXRy6F0YQSnkoqlHkAxkvzyaM2lNfcRPLWFeMhjQ+wFIZ5eWsLprPJ1/FskPakHUBjAnQXFfZOvyUHPCJU7jTdH48AhN9y9wIdD7XopA0ADfYvZ8Ni43w547vd9xY6dq84hlXcnANPeKwuGTlI8Rdp3U+oBsOGeYogbWfGpr+M90ntbHAZPkmHfpCETYlEMIAqWkAYPtwEAWeUp0L2goC+cF8/8TPZOGTNCLHI4HYM4kw19qQdAirLXdXdfUcbC6coXQ1zoccBniKSIUg+AR4fBWBt1jCLD7uPlhGbSVyIBkGF3dW+/EAUP1kqJZBiuToRoz+oF8Tq/XQCwq2L9WDu+cJk4yemvbnn72CeVL2baT3IBWHyXN7iBY+3tWb3Atfo9Nt7kndn1kUAApHKEVbazysaCYrm3xRGe8wzhewI+W/Tf/JqX8bJxnXYAQIotvgSe1Jbiw/GeceL1guISNnk71QBIscXTmW9S+KLI879vinSXey4ohsGjftzFJr/6dU+RlYmR7PWy8b6/7wQ1CCExAEjliN95N84j/MTr8oYb52PeFz++HmCVt06IF8MOwT2BFP+kDgCrbPc6rHh/CkDfVGMAq3xb2xhsa/RMMjkADJsrdSbP90/eGOyrAMDm9AFQ2ThaZ2jmAGQoBuCZIQOAtHoA1pHKazNSw7rUegCZfPR/9cuGj1MHgCt/Zj+p/DgrNdnfYJ/JAcAt0AyAZR5Qav4QUHnWz/Vmo6PHZsPpHAKKTbN9JHa6hyCSDcCSoxkAyzyglA2BZscAMvnET3yapax4PVExoBDhiVwTZfS4/e/EAOAEaQbAMg8otdULE9zwEMCOuQOg8mqrDZxWFZvmDEBnf3AbmxxruZFTqhyb87dJWMHNfG2uAeMP+zMFuWbIijIWFjVY1owXJ09KNVjm/6kpxmeSSa6t5D8PSntU7qMxZgAAAABJRU5ErkJggg==">
-                        <h4>Comprehensive Curriculum</h4>
-                        <p>
-                            Master a wide range of programming languages and frameworks,
-                            equipping yourself with a diverse skill set for versatile coding
-                            capabilities.
-                        </p>
-                    </div>
-                    <div class="service-card card">
-                        <img src="data:image/png;base64,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">
-                        <h4>Hands-on Learning</h4>
-                        <p>
-                            Practice with coding exercises and projects, gaining practical
-                            experience and confidence in real-world application.
-                        </p>
-                    </div>
-                    <div class="service-card card">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEMklEQVR4nO1aTYgcRRSemBB/YjQKCh6NmgQ9eBAielm9BaIHhSHgTlUn/iwqBlzjEpOdeV/wIIreogeFmJBFxRhIMBox/gRRNJJx+73eESFkkxw0IJI/XMgPcVdrdrune9zM9OzOTPfO1AfvNPXqvffVq3pdryaTsbCwsLCwsLCwmB69h3CDFuQVo6gFY1owkXIZ00yHldCg8T0zG+S4cL8WnExBUDMSJfSHdrFyRsE7HlYowdmkg2gCCWd6Jb+8YQKU4NuknW8aCYyvGwq+dxh3J+10s6WhLHA89CXtcAvk6dgEaEE+BQ43W/KxCVCCLSlwuKliYko9AYrpvDm1u5WAE+uGN92SLWGhFtrXdQQooYGQ/ee7jYDLvcXNt4Xs7+4qAhRjv2/7qRJuVowLXUYArfFtaw8vtMRGOwlQgkua6R3N2KGZxmuPpTPOcVwTEMB0uGqu3UpoyGyTuULAmMNYVQkIe+us/rvBWDd/T/R32hf4xHh8NlujLQQoplPKKzwQnkszfVVLJzeCByt26c0qpz+LzOUWHtZC51JJgBL8blYwmGQiM08xXq+jc8SMM8N7DmLBdL0H09gI++Z4hfu00J+pIkAxjeqRwTt8/eyu7HyT2vWdqgTnuIXVNebfiglc5Y9d52GpYhxNBQGKUcwxbg2CL2GhEvq4ri7TeI4Hb/f1NGNXHbKGTJb44813g2ZwsgQw/fLkbwOLfb0cb1ikGQfiOUXf+HpPeK/cZO4BMeztCVcM882ghX5NkAC8HNbTjLdjpyVDV/TouQa229aorzSQ5BYYrs4AJfRFjJX8O1vC9aEgfo4Z/Hd9xY03+nrZH/uv1YJDqToDeg5igWK8X4eA7YEtxrKYtj41Aft6joslWuj71FSBXAl3BhNMZOZpwVtXGu+4eChEQM1SOSU7Z3MAtpwAPSkncyP5e2O01k74Ja1cLk3vvja5b/jfCuWV97DCzJHOL0HBWeUVeiIkMH1eNe7VIBjGqtrz0ZeRuVys1EJ/pfouoEw5cwuPTUsA0/ja4fxdlQyhj2rOx7SniqyxuXIdvmxugorpkyonfggCcrGkbu0v3yRpmymv5RvmXO8HKKFnAhuMZ1thI7UEKKbzZtUrBNBPXUYAPgyt/rJ6jZLOI0BC6S94rZ3Bp4MAxn7z+WuqwExL2ZwmQBthuqiY/ml38OkhQJITS4DYDNhit0BcqG46A9RkQ+JY0g62nRCm0fLFTAs2J+1MYsK0qSPTvaFtoZg2TPdO16nQjPcqJFC/+TvsoxUCcHT9kfVXZzoU5k0hfN45bmF1pq+I66J/TKJtnUiCCT7SrWacDrrM4W0wtRVGy297Hm3sCJlM+0ilU4IXM5E2NtMH3XP40VC40xx+zn6pVf/TS4UwTpdX/n/Bh2DOhMmDkfrNo0UnyFQsj4RfliwsLCws/mPgXziyV74eswTIAAAAAElFTkSuQmCC">
-                        <h4>Coding Resources</h4>
-                        <p>
-                            Access an extensive library of coding references and tutorials,
-                            enriching your knowledge and supporting continuous growth.
-                        </p>
-                    </div>
-                    <div class="service-card card">
-                       <img src="data:image/png;base64,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">
-                        <h4>Industry Relevance</h4>
-                        <p>
-                            Stay current with the latest tech trends and best practices,
-                            ensuring your skills remain relevant and in demand.
-                        </p>
-                    </div>
-                    <div class="service-card card">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADaklEQVR4nO2aS6hNURjHF7kKkfIuSR6FiInHNaBk4BmlG7r7W/u6gxMj77icvf6UgZmBlBHJiAwMhDJAIYPTOd+3z8lrQomSR5G84h6te11u3MfadY/O3q1frcnZrbPX99/fXt9/rbWV8ng8Ho/H4/HUF8QoEJvPmvFIC66T4DQxDgaMLaFgSVjBRJVliI1oQbWf9okYV1HFYJU1Qo42OQhQ1Yx3uUKuQWWNsITRWszr/gUwbSpLNFUwNIyR02JeOWTAy4D3jlBZYPlNDNEMTWKeOqV+59PfoVJPVQ2i2DRpMY+dAxdUrVA2W1SaoRgrbblLEnhXC2PTrNJKUMZSYnPb6UmzeavZnNBs2v/8hjiVpa+5iDmacbF7MH20j8Q4bquB7asZl7sJsE6liW0xppGY88Tmh8PE9pXYnNwSt03o/h8BYy4xvmjGLZUWmguHJmk2p0jwzSHVf5CYc2EJU3v9P8Hkpnu7h6l6p/Xh/pE6NgeI8cGxnN0IS1ig0k6ugOE2cGtPHQO/qwXLVNrJFXIN1r2RmBduZcyUbe1XWTExJHjiuHB5ZN1eKktYTyZGC4qOqf7cZoi1uyrtUBw12lLk+MTf2DkhFTO3C5pxzM294QMJjjTfxyg1ALQU8zOJsb1jgu2pMfaFpWhtTV+tMMas/hxcp1ExJ7YV28YN1H2DGButOXISXsy1mokQMlb1cfPvxDhDFUwZ6PsmXiXGWKNquEPz/q/JrZ0El6icn127185p3dAtC7CrVmNRAWMFCSp2t5YEV1qK0UJVY5IE/+s13KPqkaCcn2+dX1/rAnuNBHdaJD8vUwLkCrkGLXjmnsbmaZdnyIQALZKflzSQrizIhABkzVPSQOKo0fb1AkidZUDAGG8dIYm50Lm91VMzZ4nN5sxlQOvD/SMT7tu3ZUoALWZrwgG9zJQAxNiTdEBeAOUzQPlXIPZzQKOfBMVXgaovg+J9QDXdRkiwK9GA2LTbfva7vqSBBBwtrrstMYqxJpkAeGD7bS1grNPR+J/2nR4cHNMpQMeHkgnEi1bXTABUMdhuPTum4peAo/VdfbWYowkyB79Fl2hDx3a72z1r/9EkrAg2Exj7ejuo6DjEKB+e/ndfm9ZazM5eDzjstRIW/dOvghn9HYzYMWXizNHj8Xg8Ho/H41H/hZ+T+TY8UrJQzAAAAABJRU5ErkJggg==">
-                        <h4>Commitment to Growth</h4>
-                        <p>
-                            Partner with us for ongoing support, guidance, and celebration
-                            of your progress as you evolve into a proficient coder.
-                        </p>
-                    </div>
-                </div>
-            </main>
-        </div>
+      <div class="row">
+        <main class="service-section flex-section">
+          <h2 class="secondary-heading">Why Us</h2>
+          <div class="service-cards grid">
+            <div class="service-card card">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACuUlEQVR4nO2Zz2sTURDHJyr++AfUk3jx4LFWz+LFq3gItjRvNqCgHorEFkVIZi6KJ7X/RBXqH+BF7M1jd17MqRcPbQVFQapQSq0rs7GkNmkJdl92X/o+MLBkIcn3+2bnzZsFCAQCgUAgEAgEAoFAIBAIBNySQClqNkajJk2gpZqGXk9YvqD3YFiJWnzaCM8YSytoOekV6T2hF2PNR6dgaEigVLH8AC3/3E14Vwj9QOFp7zMi+sjH0dKrvoXvzAjhl/od4CUJlFBo9n/Fd0yg115mQqWd9vsSv82EKfCJivBJI7yalQFaE7SIgi8Y4ZnMxHfqwXPwAU74EFr+lLkBlla8qAWmyRezFr8VabNUdKK0w3NjAFoah6KDwtOuDPBiNzBCU+4M4PtQdNDSuMMMuAFFJ2o2Rt0ZUB8BT1rgpczFW172YhtU9EjrYAd4Bge5FR7zbUaAmW6HVIODehxG4Tlvnv2d6DBDhxr7SP1ZfwciWyRQSpsjHXP1vd1p/aCatyvfCy1ieqTV7WyPFV/Saq9FFIaWRDOiPtLuGNtjcb1Om5xhWvFAINCFbml6WKoIjxnhO9ikhxp6rZ/pvcnFyWMwNCRQqi40LhmhJygsaGmjj65vw1iKUfixjte8LIzlFh9FYTSWWxmcAhfR0r3y+9oJ8OPNL03s9QJ0H0YsF3omGMV81liaz1p4DyPemRafgSKBceMKWvrsWvy2A9JXjPkqFAGM6TZa/jUw8Z3Q37yVq/iK0E0jtJmD+L+ZQL9R6G4u4jFuXE//QF7it2qC0KaxjWsDFV9dqJ8zlr/nLb5jAq+aD/XzAxFfnisfThuVAgj/xwRL8eV5PuLcACNk8ha7W1QsV90bYOlN3kL3eBTeDsAA/lJcA+ibewOE1gpswJpzA9DSUxRaz1tsVwit66nTuQGBAAwVfwBhANySHdAu9AAAAABJRU5ErkJggg=="
+              />
+              <h4>Personalized Approach</h4>
+              <p>
+                Tailored tutoring to fit your unique learning style and coding
+                goals, ensuring a customized and effective learning experience.
+              </p>
+            </div>
+            <div class="service-card card">
+              <img
+                src="data:image/png;base64,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"
+              />
+              <h4>Experienced Tutors</h4>
+              <p>
+                Learn from industry professionals with real-world expertise,
+                gaining valuable insights and mentorship to excel in web
+                development.
+              </p>
+            </div>
+            <div class="service-card card">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEk0lEQVR4nO2bW2hcZRDH1/sNVGxVRJCqKFZfvEtFLd4RwVuJtOzObIIQEOxDFUzb5Mzfp+KDj7WgoC0FK1aovngtdlW0lrrkzJyEaouSB2mlitgqWpsKkTmbTZNms+kmZveczRkY2N3zXXZ+Z76Z73JOLpdJJpk0Ks8M4iK24JFihO651lzShEyKpPiDDSPNUO9z5b6VZ+WSIBzidjb82yzjqwAKhhc5DO5ttf05MmxopvFVAGR4iUz+oihY2lIAbPJZqwBUvsvhggZ3tAwAmZRaCwAjZDhEEW6dtwA4hiC/5w03z1sAXPGEXzjsu2HeAuBKTDhIA32L5zEAjLDKTzzQe3XbAujY2nEaqQT1ypDJEA3iirYEkO/H9RQFS1jlaF0Iih84XHt5OgAovmfFelI8T4qXWbGzTtmtuZHcKW4cRXignhYjXJdoAKTyXdGC+90gby+/C+dXP/tUl1R+ru3i2EEqNB2ACoTglkQCIMO24hDO7upfczEbXmHDgdEg9qd7Q3cZ53ZFuMpne7OCbFJKHgDF593l7jNIcVecv2sD+ioOeBY8zoZd7QNA5Whnf981pLg2vtu1AX3JkfTkLbj7eF91Ul/KALzndVnlgyniwm/58trLxvXRy6F0YQSnkoqlHkAxkvzyaM2lNfcRPLWFeMhjQ+wFIZ5eWsLprPJ1/FskPakHUBjAnQXFfZOvyUHPCJU7jTdH48AhN9y9wIdD7XopA0ADfYvZ8Ni43w547vd9xY6dq84hlXcnANPeKwuGTlI8Rdp3U+oBsOGeYogbWfGpr+M90ntbHAZPkmHfpCETYlEMIAqWkAYPtwEAWeUp0L2goC+cF8/8TPZOGTNCLHI4HYM4kw19qQdAirLXdXdfUcbC6coXQ1zoccBniKSIUg+AR4fBWBt1jCLD7uPlhGbSVyIBkGF3dW+/EAUP1kqJZBiuToRoz+oF8Tq/XQCwq2L9WDu+cJk4yemvbnn72CeVL2baT3IBWHyXN7iBY+3tWb3Atfo9Nt7kndn1kUAApHKEVbazysaCYrm3xRGe8wzhewI+W/Tf/JqX8bJxnXYAQIotvgSe1Jbiw/GeceL1guISNnk71QBIscXTmW9S+KLI879vinSXey4ohsGjftzFJr/6dU+RlYmR7PWy8b6/7wQ1CCExAEjliN95N84j/MTr8oYb52PeFz++HmCVt06IF8MOwT2BFP+kDgCrbPc6rHh/CkDfVGMAq3xb2xhsa/RMMjkADJsrdSbP90/eGOyrAMDm9AFQ2ThaZ2jmAGQoBuCZIQOAtHoA1pHKazNSw7rUegCZfPR/9cuGj1MHgCt/Zj+p/DgrNdnfYJ/JAcAt0AyAZR5Qav4QUHnWz/Vmo6PHZsPpHAKKTbN9JHa6hyCSDcCSoxkAyzyglA2BZscAMvnET3yapax4PVExoBDhiVwTZfS4/e/EAOAEaQbAMg8otdULE9zwEMCOuQOg8mqrDZxWFZvmDEBnf3AbmxxruZFTqhyb87dJWMHNfG2uAeMP+zMFuWbIijIWFjVY1owXJ09KNVjm/6kpxmeSSa6t5D8PSntU7qMxZgAAAABJRU5ErkJggg=="
+              />
+              <h4>Comprehensive Curriculum</h4>
+              <p>
+                Master a wide range of programming languages and frameworks,
+                equipping yourself with a diverse skill set for versatile coding
+                capabilities.
+              </p>
+            </div>
+            <div class="service-card card">
+              <img
+                src="data:image/png;base64,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"
+              />
+              <h4>Hands-on Learning</h4>
+              <p>
+                Practice with coding exercises and projects, gaining practical
+                experience and confidence in real-world application.
+              </p>
+            </div>
+            <div class="service-card card">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEMklEQVR4nO1aTYgcRRSemBB/YjQKCh6NmgQ9eBAielm9BaIHhSHgTlUn/iwqBlzjEpOdeV/wIIreogeFmJBFxRhIMBox/gRRNJJx+73eESFkkxw0IJI/XMgPcVdrdrune9zM9OzOTPfO1AfvNPXqvffVq3pdryaTsbCwsLCwsLCwmB69h3CDFuQVo6gFY1owkXIZ00yHldCg8T0zG+S4cL8WnExBUDMSJfSHdrFyRsE7HlYowdmkg2gCCWd6Jb+8YQKU4NuknW8aCYyvGwq+dxh3J+10s6WhLHA89CXtcAvk6dgEaEE+BQ43W/KxCVCCLSlwuKliYko9AYrpvDm1u5WAE+uGN92SLWGhFtrXdQQooYGQ/ee7jYDLvcXNt4Xs7+4qAhRjv2/7qRJuVowLXUYArfFtaw8vtMRGOwlQgkua6R3N2KGZxmuPpTPOcVwTEMB0uGqu3UpoyGyTuULAmMNYVQkIe+us/rvBWDd/T/R32hf4xHh8NlujLQQoplPKKzwQnkszfVVLJzeCByt26c0qpz+LzOUWHtZC51JJgBL8blYwmGQiM08xXq+jc8SMM8N7DmLBdL0H09gI++Z4hfu00J+pIkAxjeqRwTt8/eyu7HyT2vWdqgTnuIXVNebfiglc5Y9d52GpYhxNBQGKUcwxbg2CL2GhEvq4ri7TeI4Hb/f1NGNXHbKGTJb44813g2ZwsgQw/fLkbwOLfb0cb1ikGQfiOUXf+HpPeK/cZO4BMeztCVcM882ghX5NkAC8HNbTjLdjpyVDV/TouQa229aorzSQ5BYYrs4AJfRFjJX8O1vC9aEgfo4Z/Hd9xY03+nrZH/uv1YJDqToDeg5igWK8X4eA7YEtxrKYtj41Aft6joslWuj71FSBXAl3BhNMZOZpwVtXGu+4eChEQM1SOSU7Z3MAtpwAPSkncyP5e2O01k74Ja1cLk3vvja5b/jfCuWV97DCzJHOL0HBWeUVeiIkMH1eNe7VIBjGqtrz0ZeRuVys1EJ/pfouoEw5cwuPTUsA0/ja4fxdlQyhj2rOx7SniqyxuXIdvmxugorpkyonfggCcrGkbu0v3yRpmymv5RvmXO8HKKFnAhuMZ1thI7UEKKbzZtUrBNBPXUYAPgyt/rJ6jZLOI0BC6S94rZ3Bp4MAxn7z+WuqwExL2ZwmQBthuqiY/ml38OkhQJITS4DYDNhit0BcqG46A9RkQ+JY0g62nRCm0fLFTAs2J+1MYsK0qSPTvaFtoZg2TPdO16nQjPcqJFC/+TvsoxUCcHT9kfVXZzoU5k0hfN45bmF1pq+I66J/TKJtnUiCCT7SrWacDrrM4W0wtRVGy297Hm3sCJlM+0ilU4IXM5E2NtMH3XP40VC40xx+zn6pVf/TS4UwTpdX/n/Bh2DOhMmDkfrNo0UnyFQsj4RfliwsLCws/mPgXziyV74eswTIAAAAAElFTkSuQmCC"
+              />
+              <h4>Coding Resources</h4>
+              <p>
+                Access an extensive library of coding references and tutorials,
+                enriching your knowledge and supporting continuous growth.
+              </p>
+            </div>
+            <div class="service-card card">
+              <img
+                src="data:image/png;base64,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"
+              />
+              <h4>Industry Relevance</h4>
+              <p>
+                Stay current with the latest tech trends and best practices,
+                ensuring your skills remain relevant and in demand.
+              </p>
+            </div>
+            <div class="service-card card">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADaklEQVR4nO2aS6hNURjHF7kKkfIuSR6FiInHNaBk4BmlG7r7W/u6gxMj77icvf6UgZmBlBHJiAwMhDJAIYPTOd+3z8lrQomSR5G84h6te11u3MfadY/O3q1frcnZrbPX99/fXt9/rbWV8ng8Ho/H4/HUF8QoEJvPmvFIC66T4DQxDgaMLaFgSVjBRJVliI1oQbWf9okYV1HFYJU1Qo42OQhQ1Yx3uUKuQWWNsITRWszr/gUwbSpLNFUwNIyR02JeOWTAy4D3jlBZYPlNDNEMTWKeOqV+59PfoVJPVQ2i2DRpMY+dAxdUrVA2W1SaoRgrbblLEnhXC2PTrNJKUMZSYnPb6UmzeavZnNBs2v/8hjiVpa+5iDmacbF7MH20j8Q4bquB7asZl7sJsE6liW0xppGY88Tmh8PE9pXYnNwSt03o/h8BYy4xvmjGLZUWmguHJmk2p0jwzSHVf5CYc2EJU3v9P8Hkpnu7h6l6p/Xh/pE6NgeI8cGxnN0IS1ig0k6ugOE2cGtPHQO/qwXLVNrJFXIN1r2RmBduZcyUbe1XWTExJHjiuHB5ZN1eKktYTyZGC4qOqf7cZoi1uyrtUBw12lLk+MTf2DkhFTO3C5pxzM294QMJjjTfxyg1ALQU8zOJsb1jgu2pMfaFpWhtTV+tMMas/hxcp1ExJ7YV28YN1H2DGButOXISXsy1mokQMlb1cfPvxDhDFUwZ6PsmXiXGWKNquEPz/q/JrZ0El6icn127185p3dAtC7CrVmNRAWMFCSp2t5YEV1qK0UJVY5IE/+s13KPqkaCcn2+dX1/rAnuNBHdaJD8vUwLkCrkGLXjmnsbmaZdnyIQALZKflzSQrizIhABkzVPSQOKo0fb1AkidZUDAGG8dIYm50Lm91VMzZ4nN5sxlQOvD/SMT7tu3ZUoALWZrwgG9zJQAxNiTdEBeAOUzQPlXIPZzQKOfBMVXgaovg+J9QDXdRkiwK9GA2LTbfva7vqSBBBwtrrstMYqxJpkAeGD7bS1grNPR+J/2nR4cHNMpQMeHkgnEi1bXTABUMdhuPTum4peAo/VdfbWYowkyB79Fl2hDx3a72z1r/9EkrAg2Exj7ejuo6DjEKB+e/ndfm9ZazM5eDzjstRIW/dOvghn9HYzYMWXizNHj8Xg8Ho/H41H/hZ+T+TY8UrJQzAAAAABJRU5ErkJggg=="
+              />
+              <h4>Commitment to Growth</h4>
+              <p>
+                Partner with us for ongoing support, guidance, and celebration
+                of your progress as you evolve into a proficient coder.
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
     </section>
 
     <!-- -------------------------------------- Notify Message -------------------------------- -->
     <section class="hidden">
-        <div class="overlay"></div>
-        <main class="thanks-msg">
-            <img src="./assets/icons/cross.svg" alt="cross Mark" />
-            <h4>Thanks for Joining Us!</h4>
-            <p>You should be receiving a configuration message soon.</p>
-        </main>
+      <div class="overlay"></div>
+      <main class="thanks-msg">
+        <img src="./assets/icons/cross.svg" alt="cross Mark" />
+        <h4>Thanks for Joining Us!</h4>
+        <p>You should be receiving a configuration message soon.</p>
+      </main>
     </section>
     <!-- --------------------------------------  Notify  Form -------------------------------- -->
     <section>
-        <div class="row">
-            <main class="secondary-cta">
-                <div class="secondary-cta-description">
-                    <h2 class="secondary-cta-heading">Let's Be in Touch</h2>
-                    <p>
-                        Get the latest updates, exclusive offers, and valuable resources
-                        by subscribing to CWN. Join our community of learners and unlock a
-                        world of knowledge.
-                    </p>
-                </div>
-                <form>
-                    <input type="email" name="input" placeholder="Enter Email" />
-                    <button class="secondary-btn">Subscribe</button>
-                </form>
-            </main>
-        </div>
+      <div class="row">
+        <main class="secondary-cta">
+          <div class="secondary-cta-description">
+            <h2 class="secondary-cta-heading">Let's Be in Touch</h2>
+            <p>
+              Get the latest updates, exclusive offers, and valuable resources
+              by subscribing to CWN. Join our community of learners and unlock a
+              world of knowledge.
+            </p>
+          </div>
+          <form>
+            <input type="email" name="input" placeholder="Enter Email" />
+            <button class="secondary-btn">Subscribe</button>
+          </form>
+        </main>
+      </div>
     </section>
 
     <!-- --------------------------------------   Foooter -------------------- -->
     <footer>
-        <div class="footer-icons">
-            <a href="https://www.facebook.com/codewithnaqvi" target="_blank"><img
-                    src="./assets/icons/social-media/facebook.svg" alt="facebook icon" loading="lazy" title="Facebook"
-                    target="_blank" /></a>
-            <a href="https://www.youtube.com/@CodeWithNaqvi" target="_blank"><img
-                    src="./assets/icons/social-media/youtube.svg" alt="youtube icon" loading="lazy" title="Youtube"
-                    target="_blank" /></a>
-            <a href="https://www.linkedin.com/company/code-with-naqvi/mycompany/" target="_blank"><img
-                    src="./assets/icons/social-media/linked-in.svg" alt="linkedin icon" loading="lazy" title="Linkedin"
-                    target="_blank" /></a>
-            <a href="https://twitter.com/CodeNaqvi" target="_blank"><img src="./assets/icons/social-media/twitter.svg"
-                    alt="twitter icon" loading="lazy" title="Twitter" target="_blank" /></a>
-            <a href="https://www.instagram.com/codewithnaqvi/" target="_blank"><img
-                    src="./assets/icons/social-media/instagram.svg" alt="instagram icon" loading="lazy"
-                    title="instagram" target="_blank" /></a>
-        </div>
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Team</a></li>
-            </ul>
-        </div>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/codewithnaqvi" target="_blank"
+          ><img
+            src="./assets/icons/social-media/facebook.svg"
+            alt="facebook icon"
+            loading="lazy"
+            title="Facebook"
+            target="_blank"
+        /></a>
+        <a href="https://www.youtube.com/@CodeWithNaqvi" target="_blank"
+          ><img
+            src="./assets/icons/social-media/youtube.svg"
+            alt="youtube icon"
+            loading="lazy"
+            title="Youtube"
+            target="_blank"
+        /></a>
+        <a
+          href="https://www.linkedin.com/company/code-with-naqvi/mycompany/"
+          target="_blank"
+          ><img
+            src="./assets/icons/social-media/linked-in.svg"
+            alt="linkedin icon"
+            loading="lazy"
+            title="Linkedin"
+            target="_blank"
+        /></a>
+        <a href="https://twitter.com/CodeNaqvi" target="_blank"
+          ><img
+            src="./assets/icons/social-media/twitter.svg"
+            alt="twitter icon"
+            loading="lazy"
+            title="Twitter"
+            target="_blank"
+        /></a>
+        <a href="https://www.instagram.com/codewithnaqvi/" target="_blank"
+          ><img
+            src="./assets/icons/social-media/instagram.svg"
+            alt="instagram icon"
+            loading="lazy"
+            title="instagram"
+            target="_blank"
+        /></a>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </div>
 
-        <small class="footer-disclaimer">&copy; 2023. All Rights Reserved</small>
+      <small class="footer-disclaimer">&copy; 2023. All Rights Reserved</small>
     </footer>
-</body>
-
+  </body>
 </html>
