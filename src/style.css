@@ -146,7 +146,7 @@ p {
 }
 
 .primary-btn:hover {
-  background: var(--gradient-hover);
+  background: var(--gradient);
 }
 
 .card {
@@ -238,7 +238,7 @@ footer {
 
 nav {
   justify-content: space-between;
-  padding: var(--gutter-nano) var(--gutter-large);
+  padding: var(--gutter-nano) var(--gutter-medium);
   position: relative;
   background-color: var(--primary-color);
   z-index: 2;
@@ -292,6 +292,12 @@ footer {
   width: 35px;
 }
 
+@media (max-width: 1480px) {
+  nav {
+    padding: var(--gutter-nano) var(--gutter-small);
+  }
+}
+
 @media (max-width: 790px) {
   .nav-links {
     position: absolute;
@@ -324,6 +330,9 @@ footer {
 @media (max-width: 480px) {
   .footer-links ul {
     gap: var(--gutter-small);
+  }
+  nav {
+    padding: var(--gutter-nano) var(--gutter-xx-small);
   }
 }
 
@@ -505,6 +514,10 @@ footer {
   .gs-block {
     gap: var(--gutter-small);
   }
+
+  .row:has(.gs-grid) {
+    margin: 0 var(--gutter-xx-small);
+  }
 }
 
 @media (max-width: 688px) {
@@ -575,6 +588,12 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+  .service-section {
+    padding: 0 var(--gutter-xx-small);
+  }
+}
+
 /* ======================================== */
 /* ================  CTA  ================ */
 /* ======================================== */
@@ -628,12 +647,21 @@ form button {
     grid-template-columns: 1fr;
     place-items: start;
     gap: var(--gutter-x-small);
+    padding: var(--gutter-small);
   }
   .secondary-cta-heading {
     margin-bottom: var(--gutter-micro);
   }
 }
 
+@media (max-width: 480px) {
+  .secondary-cta {
+    padding: var(--gutter-small) var(--gutter-xx-small);
+  }
+  form input {
+    width: 80%;
+  }
+}
 /* ======================================== */
 /* ================  Thank You Message  ================ */
 /* ======================================== */
