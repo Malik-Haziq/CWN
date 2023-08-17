@@ -713,7 +713,7 @@ section:has(.overlay) {
   background: var(--main-color);
   color: var(--dark);
   padding: var(--gutter-medium);
-  margin: var(--gutter-large) 0;
+  margin: var(--gutter-large) auto;
   max-width: 500px;
   display: flex;
   flex-direction: column;
@@ -722,6 +722,12 @@ section:has(.overlay) {
 }
 
 #enrollment-form label {
+  margin-right: var(--gutter-small);
+}
+
+#enrollment-form input {
+  width: 90%;
+  margin: 0 auto;
 }
 
 #enrollment-form select {
