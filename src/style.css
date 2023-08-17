@@ -736,6 +736,11 @@ section:has(.overlay) {
   font-size: var(--text);
   outline: none;
 }
+@media (max-width: 480px) {
+  #enrollment-form {
+    padding: var(--gutter-normal) var(--gutter-x-small);
+  }
+}
 
 /* ======================================== */
 /* ================  Courses Page  ================ */
