@@ -192,7 +192,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: var(--gutter-medium);
 }
 
@@ -466,6 +466,12 @@ footer {
 .gs-block:not(:last-child) {
   margin-bottom: var(--gutter-medium);
 }
+
+.secondary-heading {
+  text-align: center;
+  display: inline-block;
+}
+
 .gs-block {
   display: flex;
   align-items: center;
@@ -592,6 +598,24 @@ footer {
   .service-section {
     padding: 0 var(--gutter-xx-small);
   }
+}
+
+/* ======================================== */
+/* ================  CTA  ================ */
+/* ======================================== */
+
+.testimonials {
+  display: flex;
+  gap: var(--gutter-small);
+  overflow-x: scroll;
+}
+
+.testimonial-card {
+  padding: var(--gutter-small);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  /* width: 900px; */
 }
 
 /* ======================================== */
