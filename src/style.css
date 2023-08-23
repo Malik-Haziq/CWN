@@ -6,6 +6,7 @@
   --primary-color: #fefefe;
   --primary-color-shade: #fcf7f7;
   --main-color: #5ed17f;
+  --main-color-shade: #49ac65;
   --grey-color: #fefefe;
   --accent: #2181ff;
 
@@ -87,6 +88,26 @@ body {
   color: var(--text-color);
   font-size: var(--text);
   position: relative;
+}
+
+/* ---------  Scroll Bar  ----------- */
+.testimonial-cards::-webkit-scrollbar,
+::-webkit-scrollbar {
+  background: var(--primary-color-shade);
+  height: 10px;
+  width: 10px;
+  border-radius: var(--radius);
+}
+
+.testimonial-cards::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: var(--radius);
+}
+
+.testimonial-cards::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color-shade);
 }
 
 /* ======================================== */
@@ -467,9 +488,16 @@ footer {
   margin-bottom: var(--gutter-medium);
 }
 
+.started-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .secondary-heading {
   text-align: center;
   display: inline-block;
+  margin: 0 auto;
 }
 
 .gs-block {
@@ -490,10 +518,10 @@ footer {
 .gs-text p {
   color: var(--sub);
 }
+
 .step-number {
   font-size: 8.6rem;
   font-weight: 600;
-  /* color: var(--main-color); */
   color: rgba(195, 195, 195, 0.7);
   font-family: sans-serif;
 }
@@ -601,21 +629,34 @@ footer {
 }
 
 /* ======================================== */
-/* ================  CTA  ================ */
+/* ================  Testimonials  ================ */
 /* ======================================== */
 
 .testimonials {
   display: flex;
+  flex-direction: column;
+  gap: var(--gutter-medium);
+}
+
+.testimonial-cards {
+  display: flex;
+  align-items: flex-start;
   gap: var(--gutter-small);
   overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
 
 .testimonial-card {
   padding: var(--gutter-small);
-
-  border: 1px solid var(--border);
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color-shade);
   border-radius: var(--radius);
-  /* width: 900px; */
+  min-width: 350px;
+  max-width: 400px;
+  cursor: default;
+  list-style-type: none;
+  scroll-snap-align: center;
+  margin-bottom: var(--gutter-x-small);
 }
 
 /* ======================================== */
