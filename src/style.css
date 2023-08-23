@@ -12,7 +12,7 @@
 
   --important: #2f2f2f;
   --text-color: #444;
-  --sub: #333;
+  --sub: #666;
   --dark: #2f2f2f;
 
   --border: rgba(195, 195, 195, 0.2);
@@ -90,12 +90,12 @@ body {
   position: relative;
 }
 
-/* ---------  Scroll Bar  ----------- */
+/* ---------  Scroll Bar / Testimonial scroll bar  ----------- */
 .testimonial-cards::-webkit-scrollbar,
 ::-webkit-scrollbar {
   background-color: var(--primary-color-shade);
-  height: 10px;
-  width: 10px;
+  height: 8px;
+  width: 8px;
   border-radius: var(--radius);
 }
 
@@ -632,6 +632,10 @@ footer {
 /* ================  Testimonials  ================ */
 /* ======================================== */
 
+.testimonial-section {
+  margin: var(--gutter-huge) var(--gutter-small);
+}
+
 .testimonials {
   display: flex;
   flex-direction: column;
@@ -647,16 +651,34 @@ footer {
 }
 
 .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter-xx-small);
   padding: var(--gutter-small);
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color-shade);
   border-radius: var(--radius);
   min-width: 350px;
-  max-width: 400px;
   cursor: default;
   list-style-type: none;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   margin-bottom: var(--gutter-x-small);
+  line-height: 1.25;
+  word-spacing: 1px;
+  font-size: var(--text-medium);
+}
+
+.testimonial-card p {
+  color: var(--sub);
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  font-weight: 500;
+}
+
+.testimonial-card small {
+  color: var(--sub);
 }
 
 /* ======================================== */
@@ -775,7 +797,7 @@ section:has(.overlay) {
 /* ================  Enrollment Form  ================ */
 /* ======================================== */
 #enrollment-form {
-  background: var(--main-color);
+  background: var(--primary-color-shade);
   color: var(--dark);
   padding: var(--gutter-medium);
   margin: var(--gutter-large) auto;
@@ -793,6 +815,7 @@ section:has(.overlay) {
 #enrollment-form input {
   width: 90%;
   margin: 0 auto;
+  border: none;
 }
 
 #enrollment-form select {
