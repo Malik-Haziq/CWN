@@ -259,7 +259,7 @@ footer {
 
 nav {
   justify-content: space-between;
-  padding: var(--gutter-nano) var(--gutter-medium);
+  padding: var(--gutter-nano) var(--gutter-large);
   position: relative;
   background-color: var(--primary-color);
   z-index: 2;
