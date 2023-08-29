@@ -337,11 +337,11 @@ footer {
     flex-direction: column;
     padding: 0 var(--gutter-large);
     margin-bottom: var(--gutter-medium);
+    align-items: flex-start;
   }
 
   .nav-links ul li {
     border-bottom: 2px solid var(--border);
-    padding-bottom: var(--gutter-xx-small);
   }
   .menu-bar {
     display: block;
@@ -383,7 +383,7 @@ footer {
 
 .hero-heading h1 span {
   background: var(--gradient);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
