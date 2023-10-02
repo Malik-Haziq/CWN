@@ -121,6 +121,7 @@ a {
 
 section {
   margin-bottom: var(--gutter-large);
+  padding-top: var(--gutter-medium);
 }
 
 h1 {
